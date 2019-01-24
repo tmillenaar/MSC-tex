@@ -378,12 +378,6 @@ In order to obtain a dense saline brine at the bottom of the deep basin, the bot
 % 
 % \subsubsection{Discussion}
 
-
-\subsection{Unintended increases and decreases in the total salt and heat content}
-\label{sect:totals_problem}
-The two types of column stability check, mentioned in section \ref{sect:stability_methods}, reveal an error in the code. The choice between a whole column check or a bottom up/top down check should be one based on model efficiency and desired detail. Instead, it appears that the total amount of salt and heat in the system systematically increases every year when the whole column check is used, and it systematically decreases every year when the top down/bottom up check is used. The magnitude of this error seems to be dependent on the ratio between the background diffusivity and convective diffusivity. The problem effects the salinity more then it does the temperature, though the problem systematically occurs in both. 
-For a standard run, the error seems to be around -0.2 $kg/m^3$ salt per year when the top down/bottom up check is used. This is a significant decrease. When the whole column check is used, the error seems to be around 0.05 $kg/m^3$ salt per year. Since the error is smallest when using the whole column check, this method will be used in this research, though the effects are still rather significant when long time spans are investigated. The root cause of this problem has not yet been discovered. 
-
 \FloatBarrier
 % %%%%%%%%%Standard run
 % \begin{figure*}
@@ -440,13 +434,13 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \label{fig:Very_shallow_basin}
 \end{figure*}
 
-%% Shallow mar basin fig 60m MEAN VALUES
-\begin{figure*}
-\centering
-\includegraphics[width=\textwidth,keepaspectratio]{60m_mar_depth_40yr_totals.png}
-\caption{Mean values over time corresponding to the scenario shown in figure \ref{fig:Very_shallow_basin}}
-\label{fig:Very_shallow_basin_means}
-\end{figure*}\hfill
+% %% Shallow mar basin fig 60m MEAN VALUES
+% \begin{figure*}
+% \centering
+% \includegraphics[width=\textwidth,keepaspectratio]{60m_mar_depth_40yr_totals.png}
+% \caption{Mean values over time corresponding to the scenario shown in figure \ref{fig:Very_shallow_basin}}
+% \label{fig:Very_shallow_basin_means}
+% \end{figure*}\hfill
 
 % % Fig with high background diff
 % %-------------------
@@ -465,6 +459,15 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \label{fig:high_db_success}
 \end{figure*}
 
+%% High bg diff MEAN VALUES
+\begin{figure*}
+\centering
+\includegraphics[width=0.9\textwidth,keepaspectratio]{high_bg_diff_kleine_uitslag_mean_values.png}
+\caption{Mean values over time corresponding to the scenario shown in figure \ref{fig:high_db_success}}
+\label{fig:high_bg_diff_means}
+\end{figure*}\hfill
+
+
 % % Hybrid fig
 % %-------------------
 \begin{figure*}
@@ -481,6 +484,15 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \caption{Standard model run with a background diffusivity of 3.0 and a depth of 100m}
 \label{fig:hybrid}
 \end{figure*}
+
+%% Hybrid MEAN VALUES
+\begin{figure*}
+\centering
+\includegraphics[width=0.9\textwidth,keepaspectratio]{hybrid_means.png}
+\caption{Mean values over time corresponding to the scenario shown in figure \ref{fig:hybrid}}
+\label{fig:hybrid_means}
+\end{figure*}\hfill
+
 
 %% 0.001 net evap 
 \begin{figure*}
@@ -509,38 +521,40 @@ Figure \ref{fig:Very_shallow_basin} shows the results of a standard case with a 
 
 
 \subsubsection{Background diffusivity}
-Figure \ref{fig:high_db_success} shows the results of a standard run and a background diffusivity of 1e-3.0. The depth to which the surface forces penetrate, as well as the maximum deviation from the average temperature at the surface differ from the previous scenario. The bottom of the maringal basin experiences significance variation throughout the year. A very small increase in salinity is observed in the bottom of the deep basin, of which the largest pusle occurred in the first year after the spinup.
+Figure \ref{fig:high_db_success} shows the results of a standard run and a background diffusivity of 1e-3.0. The depth to which the surface forces penetrate, as well as the maximum deviation from the average temperature at the surface differ from the previous scenario. The bottom of the marginal basin experiences significance variation throughout the year. A very small increase in salinity is observed in the bottom of the deep basin, of which the largest pulse occurred in the first year after the spinup. The average values of both basins were almost unaffected by the exchanging flows as can be observed in figure \ref{fig:high_bg_diff_means}.
 
-\subsection{A depth and diffusivity hybrid}
-The decrease in marginal basin depth of the case shown in figure \ref{fig:hybrid} compared to the case shown in figure \ref{fig:high_db_success} had a large effect on the slinity at the bottom of the deep basin. The exchanging flow occurs every winter. The sailinity at the bottom of the deep basin shows a yearly net increase, as does the density in the marginal basin. The density profiles become increasingly linear as time progresses, with the marginal basin showing linearly decreasing density with depth and the middel of the deep basin showing near linear increase in density with depth.
-
+\subsubsection{A depth and diffusivity hybrid}
+The decrease in marginal basin depth of the case shown in figure \ref{fig:hybrid} compared to the case shown in figure \ref{fig:high_db_success} had a large effect on the salinity at the bottom of the deep basin. The exchanging flow occurs every winter. The sailinity at the bottom of the deep basin shows a yearly net increase, as does the density in the marginal basin. The density profiles become increasingly linear as time progresses, with the marginal basin showing linearly decreasing density with depth and the middle of the deep basin showing a near linear increase in density with depth. 
+Unlike the previous case, all average values shown in figure \ref{fig:hybrid_means} significantly increase with time after year 10. The increases seem to be exponential in nature and will be addressed in section \ref{sect:totals_problem}. 
 
 \subsubsection{Net Evaporation}
-Figure \ref{fig:high_db_success} shows the results of a standard run and a net evaporation rate resulting in an increase of 0.001 $kg/m^3$ salt per second. The marginal basin yearly inceases in salinity as a whole. In the deep basin, the surface and the deep part of the basin increase yearly in salinity as well, with the middle of the column dragging behind.
+Figure \ref{fig:high_db_success} shows the results of a standard run and a net evaporation rate resulting in an increase of 0.001 $kg/m^3$ salt per second. The marginal basin yearly increases in salinity as a whole. In the deep basin, the surface and the deep part of the basin increase yearly in salinity as well, with the middle of the column dragging behind.
 
-\FloatBarrier
+\subsection{Unintended increases and decreases in the total salt and heat content}
+\label{sect:totals_problem}
+Figure \ref{fig:hybrid_means} reveals an error in the code where all averages are increasing, even though no net evaporation is active. While increases and decreases may occur in one basin, it should be at the expense of the total amount of the same property in the other. However, whenever prolonged periods of continuous advection occur, like in the case shown in figures \ref{fig:high_db_success} and \ref{fig:high_bg_diff_means}, the total amount of salt and heat in the system will be affected.
+
+The two types of column stability check, mentioned in section \ref{sect:stability_methods}, also affect the outcome of this problem. The choice between a whole column check or a bottom up/top down check should be one based on model efficiency and desired detail. Instead, it appears that the total amount of salt and heat in the system systematically increases every year when the whole column check is used, and it systematically decreases every year when the top down/bottom up check is used. The magnitude of this error seems to be dependent on the ratio between the background diffusivity and convective diffusivity. The problem effects the salinity more then it does the temperature, though the problem systematically occurs in both. 
+For a standard run, the error seems to be around -0.2 $kg/m^3$ salt per year when the top down/bottom up check is used. This is a significant decrease. When the whole column check is used, the error seems to be around 0.05 $kg/m^3$ salt per year. Since the error is smallest when using the whole column check, this method will be used in this research, though the effects are still rather significant when long time spans are investigated. The root cause of this problem has not yet been discovered. 
+
 \subsection{Discussion}
 The effects of the surface heat flux and evaporation decrease with depth and can only penetrate down to a maximum depth, the extend of which is determined by the speed of the diffusivity. Shallower basins will therefore experience changes as a result of forcing more quickly and more severely then deeper basins. Increased depth of penetration of surface forcing due to increased background diffusivity goes hand in hand with a reduction in maximum deviation from the mean surface value. When more salt or heat is transported down, there will subsequently be less of it left at the surface. On a similar note, larger background diffusivity more quickly reduces excess salinity in bottom waters.
 Neither a siginificant reduction in marginal basin depth nor a significant increase in background diffusivity resulted in a pronounced increase in salinity in the bottom of the deep basin. The combination of the two measures did accomplish this. Alternatively, very extreme variants of the two individual cases are also capable of producing saline deep basin bottom waters.
 
 When the evaporation is significantly higher then the influx of fresh water, the whole column will become more saline. This has a larger effect on the marginal basin, for it contains a smaller volume of water. This large effect on the evaporation on the salinity and, by extension, density of the marginal basin results in a yearly increase in the salinity at the bottom of the deep basin. The density of the marginal basin as a whole very directly follows the density at the bottom of the deep basin. While the surface and bottom of the deep basin are increasing rapidly in salinity almost as a direct result of the net increase, the rate of increase in salinity in the middle of the deep basin is limited by the rate of background diffusivity.
-An expected result of the net evaporation was that the marginal basin would be nearly permanently mixing. During winter the columns are unstable due to the cooling, as is the case with most other model output in this report. During summer, the increased overall evaporation would then have resulted in extra saline surface waters, creating instability during summer not unlike that described in section \ref{sect:Summer_mixing_discussion}. However, the net surface temperature is also increasing (figure \ref{fig:net_evap}) which counteracts the possibility of mixing in summer. This significant increase in surface temperature was unexpected and is currently thought to be a result of the density dependence of the heat forcing. This phenomenon has not yet sufficiently been investigated and is a point of consideration for future studies building on this research.
+An expected result of the net evaporation was that the marginal basin would be nearly permanently mixing. During winter the columns are unstable due to the cooling, as is the case with most other model output in this report. During summer, the increased overall evaporation would then have resulted in extra saline surface waters, creating instability during summer not unlike that described in section \ref{sect:Summer_mixing_discussion}. However, the net surface temperature is also increasing (figure \ref{fig:net_evap}) which counteracts the possibility of mixing in summer. This significant increase in surface temperature was unexpected and is currently thought to either be a result of the density dependence of the heat forcing or a result of the problem discussed in section \ref{sect:totals_problem}. This phenomenon has not yet sufficiently been investigated and is a point of consideration for future studies building on this research.
 
 
 While the combination of an increased background diffusivity and a decreased marginal basin depth resulted in a significant excess salinity in the bottom of the deep basin, the salt in the system can only be re-distributed. This puts an upper limit to the amount of excess salinity the bottom waters can hold. Net evaporation does not have this restriction and therefore seems to be a mechanism that is more capable of inducing significant halite precipitation from a deep brine in the long term.
 
 \subsubsection{Equilibrium}
 Every year flow takes place that increases salinity in the bottom of the deep basin by a slight amount, salt is added to and extracted from the bottom of the deep and marginal basins, respectively. The reverse occurs near the surface of the basin. The redistribution of salt from and towards these extremes through diffusion creates a linear profile over time, the slope of which is mainly dependent on the background diffusivity. This inclination towards a linear profile over time can best be observed in figure \ref{fig:high_db_success}. The linear dependence of the slope $\frac{\delta Q}{\delta t}$ on the diffusivity can also be observed directly from equation \ref{eq:diff_original}. This equation shows a similar relation between the slope and the advection, but the advection is generally about two orders of magnitude smaller then the background diffusion. Also, advection only occurs in periods of exchanging flow as opposed to the continuous presence of the background diffusivity. 
+This equilibrium seems to be determined by the difference, or eventual lack thereof, in salinity between the top and the bottom of the deep basin. The equilibrium is theoretically reached when the yearly maximum salinity in the bottom of the deep basin is roughly similar to that in the bottom of the marginal basin. The marginal basin will then reach a stable yearly average density, capping any further growth of the deep basin brine. No solid conclusions can be made on the long term outcome of the model however, for as of yet unidentified imperfections in the code have undesired effects on the total salt and heat contents in the basins, as discussed in section \ref{sect:totals_problem}.
 
 \subsubsection{The cycle of exchanging flow}
 \label{sect:flow_cycle}
-The large pulse of flow marked as (1) in figure \ref{fig:with_adv_large_effect} occurred in January after which no more flow was exchanged the following years. This is rather different in a scenario where the flow occurs gradually rather then pulse-wise. In all three scenarios (figures \ref{fig:Very_shallow_basin}, \ref{fig:high_db_success} and \ref{fig:net_evap}) the exchanged volume is rather minor. In these scenarios the flow between the basins also starts in winter. The months differ slightly per scenario but the process is the same. As the winter is progressing, the marginal basin is continuously cooling and thus increasing in density. From April onward, the column is also increasing in salinity due to the increasing evaporation in spring. In the marginal basin the effect is increased since the exchanging flow still continues and the surface water that is entering the marginal basin now is warmer and more saline then the deeper water leaving it. The increase in temperature and by extension the effect it has on the density is however rather small when compared to the increase in salinity. The marginal basin is still in an unbalanced state due to the saline surface water so mixing in the marginal basin is quick in resupplying salt to the bottom. Since the exchanging flow from the marginal basin to the deep basin is now more saline then in winter, the salinity of the bottom waters of the deep basin increases rapidly during spring. In the end of spring/beginning of summer, the turning point is reached, where the marginal basin is now too warm and the bottom water of the deep basin too dense to allow further exchanging flow. 
-During the summer and fall, salt diffuses up from the saline bottom waters in the deep basin, thereby slowly reducing its salinity. During the fall, the marginal basin is cooling again, increasing its density. At the start of winter, the density of the marginal basin has increased enough and the density of the bottom water of the deep basin has decreased enough to again allow for exchanging flow. However, the bottom waters of the deep basin have not yet lost all of their salt since the previous exchange, for the background diffusivity is slow. Also, since significantly more water enters the marginal basin then leaves it during every spring, the deep bottom water increases in salinity every year and the surface water of the deep basin decreases in salinity every year. 
-As made evident by the decreasing yearly increase in the salinity of the marginal basin, when time approaches infinity, it seems a near equilibrium will be established, save the cyclic yearly fluctuations. 
-This equilibrium seems to be determined by the difference, or eventual lack thereof, in salinity between the top and the bottom of the deep basin. The equilibrium is supposedly reached when the yearly maximum salinity in the bottom of the deep basin is roughly similar to that in the bottom. The marginal basin will then reach a stable yearly average density, capping any further growth of the deep basin brine. No solid conclusions can be made on the long term outcome of the model, for as of yet unidentified imperfections in the code have undesired effects on the total salt and heat contents in the basins, as discussed in section \ref{sect:totals_problem}
-
-
-
+The large pulse of flow marked as (1) in figure \ref{fig:with_adv_large_effect} occurred in January after which no more flow was exchanged the following years. This is rather different in a scenario where the flow occurs gradually rather then pulse-wise. In all four scenarios (figures \ref{fig:Very_shallow_basin}, \ref{fig:high_db_success}, \ref{fig:hybrid} and \ref{fig:net_evap}) the exchanged volume is rather minor. In these scenarios the flow between the basins also starts in winter. The months differ slightly per scenario but the process is the same. As the winter is progressing, the marginal basin is continuously cooling and thus increasing in density. From April onward, the column is also increasing in salinity due to the increasing evaporation in spring. In the marginal basin the effect is increased since the exchanging flow still continues and the surface water that is entering the marginal basin now is warmer and more saline then the deeper water leaving it. The increase in temperature and by extension the effect it has on the density is however rather small when compared to the increase in salinity. The marginal basin is still in an unbalanced state due to the saline surface water so mixing in the marginal basin is quick in resupplying salt to the bottom. Since the exchanging flow from the marginal basin to the deep basin is now more saline then in winter, the salinity of the bottom waters of the deep basin increases rapidly during spring. In the end of spring/beginning of summer, the turning point is reached, where the marginal basin is now too warm and the bottom water of the deep basin too dense to allow further exchanging flow. 
+During the summer and fall, salt diffuses up from the saline bottom waters in the deep basin, thereby slowly reducing its salinity. During the fall, the marginal basin is cooling again, increasing its density. At the start of winter, the density of the marginal basin has increased enough and the density of the bottom water of the deep basin has decreased enough to again allow for exchanging flow. However, the bottom waters of the deep basin have not yet lost all of their salt since the previous exchange, for the background diffusivity is slow. Since significantly more water enters the marginal basin then leaves it during every spring, the deep bottom water is expected to slightly increases in salinity every year and the surface water of the deep basin is expected to decreases in salinity every year, until the near equilibrium is reached. The marginal basin is expected to be more strongly influenced by this exchange, for it has a smaller volume. The effect is however not visible in the data, either because the effect is too small to make a visible impact but most likely, since it only occurs in periods of exchanging flow, it is overshadowed by the problem discussed in section \ref{sect:totals_problem}.
 
 % While the expected effect does occur, the deep salt layer is rather small. Larger flow does create a more pronounced deep salt layer, but this would be one that is more saline then the bottom of the marginal basin was at the time of flow, which could not happen in reality. Less flow between the basins makes for a rate of increasing salinity at the bottom of the deep basin that is gradual enough to allow for diffusion and advection in the deep basin to negate the effect. Next to no saline bottom layer would form in the deep basin. Also, figure \ref{fig:Very shallow_basin} was created with the two basins having an equal surface area. When the deep basin is made larger, no visible change occurs in the deep basin for the salt is distributed over too large and area to be of significance. If the marginal basin is made too small, the model can reach some threshold from where the results are nonsense, as discussed in section \ref{sect:adv_problem}.
 
