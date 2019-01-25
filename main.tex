@@ -42,7 +42,7 @@
   \begin{@twocolumnfalse}
     \maketitle
     \begin{abstract}
-    Vast deposits of evaporites are found below and around the present day Mediterranean sea. These evaporites originated from a period often referred to as the Messinian Salinity Crisis (MSC). Whether the bulk these Messinian deposits originated from a deep or shallow sea is still a matter of debate. In this paper, a linear diffusion advection box model is developed and used as a first order approximation to investigate under what conditions a dense brine may be formed at the bottom of the deep basin as a result of exchanging flow between the deep basin and a shallow marginal basin. In an attempt to verify the viability of this possibility, scenarios are sought in which dense and saline water in the marginal basin could flow to the deep basin and sink as a consequence of its high density. Two scenarios are found in which it may be possible to create a dense brine at the bottom of the deep basin. In one scenario, an extra shallow marginal basin combined with a high background diffusion was able to sufficiently distribute the high salinity in summer throughout the marginal basin. The second scenario that showed to be successful is one with a net evaporation over the year, resulting in increasing salinity in both basins. The high evaporation has more impact on the smaller marginal basin, increasing its salinity and therefore its density more quickly then that of the deep basin. 
+    Vast deposits of evaporites are found below and around the present day Mediterranean sea. These evaporites originated from a period often referred to as the Messinian Salinity Crisis (MSC). Whether the bulk of these Messinian deposits originated from a deep or shallow sea is still a matter of debate. In this paper, a linear diffusion advection box model is developed and used as a first order approximation to investigate under what conditions a dense brine may be formed at the bottom of the deep basin as a result of exchanging flow between the deep basin and a shallow marginal basin. In an attempt to verify the viability of this possibility, scenarios are sought in which dense and saline water in the marginal basin could flow to the deep basin and sink as a consequence of its high density. Two scenarios are found in which it may be possible to create a dense brine at the bottom of the deep basin. In one scenario, an extra shallow marginal basin combined with a high background diffusion was able to sufficiently distribute the high salinity in summer throughout the marginal basin. The second scenario that showed to be successful is one with a net evaporation over the year, resulting in increasing salinity in both basins. The high evaporation has more impact on the smaller marginal basin, increasing its salinity and therefore its density more quickly then that of the deep basin. 
     \vspace{0.5cm}
     \end{abstract}
   \end{@twocolumnfalse}
@@ -50,17 +50,17 @@
 
 \section{Introduction}
 \subsection{Models of the Messinian Salinity Crisis}
-Below and around the present day Mediterranean sea, vast deposits of evaporites have been discovered and described \citep{hsu1972origin, krijgsman1999chronology, rouchy2006messinian, roveri2014messinian, garcia2018geochemical}. These evaporites were deposited during the Messinian in what is generally referred to as the Messinian Salinity Crisis (MSC). Marginal basins around the mediterranean, some of which are now found well above sea level, generally contain selenitic gypsum deposits \citep{garcia2018geochemical}. These marginal basins were of shallow depth at the time of deposition, generally not surpassing 200m. In Sicily, a succession containing Halite is thought to be deposited in a basin of intermediate depth (up to a kilometre). In deeper Mediterranean basins, evaporite deposits up to two kilometres thick are found. In some locations, these deposits consist primarily of halite, while in others a gypsum-halite-gypsum trilogy is found \citep{roveri2014messinian}. The up to a kilometre thick halite deposit in this succession is often termed the 'Mobile Unit'. Of this Mobile Unit, only the top few metres have been drilled \citep{hsu1972origin}. This lack of data on the deeper halite deposits leaves room for speculation about its depositional setting. Several conceptual models have been proposed to explain the origin of and developments during the MSC, the most prominent of which can can be grouped into the following categories:\\
+Below and around the present day Mediterranean sea, vast deposits of evaporites have been discovered and described \citep{hsu1972origin, krijgsman1999chronology, rouchy2006messinian, roveri2014messinian, garcia2018geochemical}. These evaporites were deposited during the Messinian in what is generally referred to as the Messinian Salinity Crisis (MSC). Marginal basins around the mediterranean, some of which are now found well above sea level, generally contain selenitic gypsum deposits \citep{garcia2018geochemical}. These marginal basins were of shallow depth at the time of deposition, generally not surpassing 200m. In Sicily, a succession containing Halite is thought to be deposited in a basin of intermediate depth (up to a kilometre). In deeper Mediterranean basins, evaporite deposits up to two kilometres thick are found. In some locations, these deposits consist primarily of halite, while in others a gypsum-halite-gypsum trilogy is found \citep{roveri2014messinian}. The up to a kilometre thick halite deposit in this succession is often termed the 'Mobile Unit'. Of this Mobile Unit, only the top few metres have been drilled \citep{hsu1972origin}. This lack of data on the deeper halite deposits leaves room for speculation about its depositional setting. Several conceptual models have been proposed to explain the origin of, and developments during the MSC, the most prominent of which can can be grouped into the following categories:\\
 
-1) The 'desiccated, deep-basin model', initially proposed by \cite{hsu1972origin}, where drill cores taken from the top of the deep basin evaporites were discussed. These sediments were interpreted to be shallow water deposits. They proposed that a basin with a depth near that of the current Mediterranean was closed off from the world's oceans to subsequently desiccate, giving rise to extensive playa lakes that resided well below global sea level. 
+1) The 'desiccated, deep-basin model', initially proposed by \cite{hsu1972origin}, in a paper where drill cores taken from the top of the deep basin evaporites were discussed. These sediments were interpreted to be shallow water deposits. They proposed that a basin with a depth near that of the current Mediterranean was closed off from the world's oceans to subsequently desiccate, giving rise to extensive playa lakes that resided well below global sea level. 
 
 2) The 'shallow-water, shallow-basin model', proposed by \cite{nesteroff1973mineralogy}, based on the similar interpretation to that of \cite{hsu1972origin}, that sediments in the deeper parts of the basin are of shallow water origin. Since these shallow water evaporites were deposited both in the deep basins as well as in the shallow marginal basins, they reasoned that the deep basin floor must have been brought up to a depth of 200-500 metres by vertical tectonic movements. Then a period followed where a cyclic opening and closing of the gateway would allow ocean waters to enter the basin during which evaporites were deposited. Finally these vertical tectonic movements would have brought the basin floor down to its present depth.
 
 3) The 'shallow-water, deep-basin model', described by \cite{rouchy2006messinian}, where limited inflow through narrow or shallow straits, combined with high evaporation, kept the water from fully filling the basins. This resulted, episodically, in shallow brine seas where evaporites were deposited. 
 
-4) The 'deep-water, deep-basin model', described by \cite{schmalz1969deep}, where dense surface water was formed as a result of evaporation. As the dense and salty water sank, it cooled, increasing its density further until it arrived at the basin floor. There it would, due to its high density, only be replaced if even denser water were to take its place. This stagnation of a dense brine would result in the precipitation of evaporites there.\\
+4) The 'deep-water, deep-basin model', described by \cite{schmalz1969deep}, where dense, saline surface water was formed as a result of evaporation. As the dense water sank, it cooled, increasing its density further until it arrived at the basin floor. There it would, due to its high density, only be replaced if even denser water were to take its place. This stagnation of a dense brine would result in the precipitation of evaporites there.\\
 
-With the recovery of drill cores from the deeper parts of the Mediterranean \citep{hsu1972origin}, the 'deep-water, deep basin model' lost support as these sediments were interpreted to be deposited in shallow water conditions. A point of caution however, also noted by \cite{nesteroff1973mineralogy}, is that the deep basin cores represent only the terminal part of the MSC, since only the top few metres of the evaporite succession were drilled. The 'shallow-water, shallow-basin model' was not widely adopted, given the lack of a mechanism capable of inducing these large vertical movements in the Mediterranean, especially in the time span of a few million years. The 'desiccated, deep-basin model' became the widely accepted model. 
+With the recovery of drill cores from the deeper parts of the Mediterranean \citep{hsu1972origin}, the 'deep-water, deep basin model' lost support as the recovered sediments were interpreted to be deposited in shallow water conditions. A point of caution however, also noted by \cite{nesteroff1973mineralogy}, is that the deep basin cores represent only the terminal part of the MSC, since only the top few metres of the evaporite succession were drilled. The 'shallow-water, shallow-basin model' was not widely adopted, given the lack of a mechanism capable of inducing these large vertical movements in the Mediterranean, especially in the time span of a few million years. The 'desiccated, deep-basin model' became the widely accepted model. 
 Later on, a model describing the relation between the marginal and deeper basins was proposed by \cite{rouchy2006messinian}. In this model the deepest parts of the basin are, depending on the relative sea level and the size of the gateways, either filled with deep water or with a brine sea. Evaporite deposition shifts, in this model, form one basin to another. This shift is, however, in contradiction with the findings of \cite{krijgsman2002onset}, who showed that the onset of the MSC was synchronous across the Mediterranean. 
 More recent research questioned the interpretations concerning shallow water deposition, suggesting that the data was either inconclusive or could even be indicative of a deep water setting \citep{hardie2004did, roveri2001mediterranean}. On the basis of this, and the termination of erosional surfaces towards the deeper parts of the Mediterranean, \cite{roveri2014messinian} argued that deep water conditions may have persisted throughout the MSC. 
 A variation of the 'deep-water, deep-basin model' was proposed by \cite{garcia2018geochemical}, where geochemical indicators in evaporites were examined. These indicated that the Mediterranean was highly stratified, with high salinity and dense, anoxic bottom waters. This led them to propose a variant of the 'deep-water, deep-basin model' where deposition of the marginal gypsum would be synchronous with the deposition of halite from a dense brine in the deeper parts of the Mediterranean. In order to investigate the plausibility of the formation of a deep brine during the MSC, an analogue is made between the present day Dead Sea and the MSC. This analogy will be tested using a linear diffusion-advection box model.
@@ -103,14 +103,14 @@ In this study, a linear diffusion-advection box model, consisting of a deep and 
 \subsection{Model setup and boundary conditions}
 \subsubsection{The box model}
 %%Introduce: 2 columns, diff, adv, SS, flowdepth
-In order to investigate the influence of a shallow marginal basin on the conditions at which stratification could occur in a deep water basin, a box model was created. The box model expands on the linear diffusion code as used by \cite{Heiden2017Application}. In this box model, the two basins are each represented by a vertical column. For each of these columns, diffusivity and advection calculations are solved for both temperature and salinity. From these, the density is inferred. The top nodes of the two columns are connected via the source-sink term. The amount of these connected nodes can be varied. When the bottom nodes of the marginal basin column are denser then those at the bottom of the deep basin, flow is initiated from the bottom of the marginal basin to that of the deep basin. At this time, flow from the top of the deep basin to that of the marginal basin is also initiated, as is the advection within the columns. Advection goes up in the main basin and down in the marginal basin.
+In order to investigate the influence of a shallow marginal basin on the conditions at which stratification could occur in a deep water basin, a box model was created. The box model expands on the linear diffusion code as used by \cite{Heiden2017Application}. In this box model, the two basins are each represented by a vertical column. For each of these columns, diffusivity and advection calculations are solved for both temperature and salinity. From these, the density is inferred. The top nodes of the two columns are connected via the source-sink term. The number of connected nodes can be varied. When the bottom nodes of the marginal basin column are denser then those at the bottom of the deep basin, flow is initiated from the bottom of the marginal basin to that of the deep basin. At this time, flow from the top of the deep basin to that of the marginal basin is also initiated, as is the advection within the columns. Advection goes up in the main basin and down in the marginal basin.
 
 \subsubsection{Boundary conditions}
 \label{sect:boundary_conditions}
 %%Introduce: forcing, ramp
 Initially, the temperature and salinity in each entire column are set to a user modifiable value, resulting in straight vertical profiles. A flux on the top node is then initiated. This flux is sinusoidal and is linearly proportional to the inverse of the diffusivity in the top two nodes. The sinusoidal flux for salinity can be assigned an above zero mean, resulting in net evaporation. The bottom node is not subject to any boundary conditions but is determined based on the node above it. At first, mixing, source-sink and advection are not active in the model.
 There are two types of forcing in the model, a heat flux on the temperature and an evaporative flux on the salinity. The former is dependent on the surface water density and the heat capacity, the latter is dependent on the salinity of the surface water. Both are sine functions with a period of a year that affect only the top node.
-During the first four years, the amplitude of the forcing will be increased from zero to 100$\%$, after which the amplitude will remain 100$\%$. After the first ten years, mixing, source-sink and advection will be turned on. I will refer to this ten year period as the spin-up period and it ranges from April year 0 until April year 10. Most scenarios in this research contain a marginal basin of 150m, for most marginal basin were shallower then 200m. While the deep basins are often over two kilometres deep, the scenarios in this model generally contain a deep basin of a mere 800m, for this reduces run time while conserving the general outcome of the model. %An example of the forcing used in the models on both the temperature and salinity is shown in figure \todo{add fig showing evap and heat flux}. 
+During the first four years, the amplitude of the forcing will be increased from zero to 100$\%$, after which the amplitude will remain 100$\%$. After the first ten years, mixing, source-sink and advection will be turned on. I will refer to this ten year period as the spin-up period and it ranges from April year 0 until April year 10. Most scenarios in this research contain a marginal basin of 150m, for most marginal basins were shallower then 200m. While the deep basins are often over two kilometres deep, the scenarios in this model generally contain a deep basin of a mere 800m, for this reduces run time while preserving the general outcome of the model. %An example of the forcing used in the models on both the temperature and salinity is shown in figure \todo{add fig showing evap and heat flux}. 
 
 %%Diffusion & FTCS
 \subsection{Diffusion discretization}
@@ -120,7 +120,7 @@ The principal diffusion equation for a diffusive physical quantity (Q) in differ
 \label{eq:diff_original}
 \end{equation}
 Where \textbf{w} is the advection velocity in $m s^{-1}$, \textbf{D} is the diffusivity in $ms^{-1}$, $\Delta$\textbf{t} is the incremental timestep in $s$, $\Delta$\textbf{z} is the spatial increment in $m$ and \textbf{S} is the source-sink term in $[Q]s^{-1}$.  
-This is discretized to shown to equation~\ref{eq:FTCS}, formulated after the explicit Forward Time Central Space (FTCS) method as described in \cite{slingerland2011mathematical} p. 143.
+This is discretized to equation~\ref{eq:FTCS}, formulated after the explicit Forward Time Central Space (FTCS) method as described in \cite{slingerland2011mathematical} p. 143.
 
 \begin{equation}
 \begin{split}
@@ -148,7 +148,6 @@ This is discretized to shown to equation~\ref{eq:FTCS}, formulated after the exp
 
 \noindent These conditions are used to dynamically adjust the size of the time step, according to 0.9 times the lowest $\Delta t$ between the various basins and criteria.
 
-
 \subsection{Column stability}
 \label{sect:stability_methods}
 The model runs with a standard, minimal diffusivity that is always present and affects both entire columns. The diffusivity can be set individually for temperature and salinity. When part of the column is unstable, which can be the entire column, the unstable part is assigned a diffusivity orders of magnitudes higher to imitate the mixing of the column. This high diffusivity is assigned to both temperature and salinity.
@@ -156,42 +155,12 @@ The model runs with a standard, minimal diffusivity that is always present and a
 In the Dead Sea model as described in \cite{Heiden2017Application}, the presence of an unstable column is determined by assessing if the top node is more dense then the one below it. For their model this is sufficient, but this creates the possibility of a dense water body at a certain depth that is considered stable by the model if there is less dense water above it. Therefore, an adaptation from \cite{Heiden2017Application} is required, where the bottom of the column is also checked for instability. Two methods are implemented, between which a choise has to be made before the run starts. In one method, the column is checked for instability both from the top down and from the bottom up. In the second method, any location is checked for instability and assigned an appropriate diffusivity. The consequences of these methods will be discussed in sections \ref{sect:transition} and \ref{sect:totals_problem}.
 
 \subsection{Density calculations}
-The density at a given node is determined using the equation of state as described in \cite{ivanov2002model}. They calculate the water density as a density anomaly from the reference density of 1e3 $kg m^{-3}$. In this research, we will show the density as absolute values, therefore adding 1e3, resulting in equation \ref{eq:state}. Their values, determined for the Dead Sea, will be applied to the MSC in this research.
+The density at a given node is determined using the equation of state as described in \cite{ivanov2002model}. They calculate the water density as a density anomaly from the reference density of 1e3 $kg$ $m^{-3}$. In this research, we will show the density as absolute values, therefore adding 1e3, resulting in equation \ref{eq:state}. Their values, determined for the Dead Sea, will be applied to the MSC in this research.
 \begin{equation}
     \rho = \rho_{ref} + r_0 - \alpha T + \beta S
 \label{eq:state}
 \end{equation}
-Where $r_0$ = -15.654, $\alpha$ = 0.4309 and $\beta$ = 0.936, as determined by \cite{ivanov2002model}. $\rho$ is the density in $kg m^{-3}$, $\rho_{ref}$ is the reference density of 1e3 $kg m^{-3}$, T is the temperature in $^{\circ} C$ and S is the salinity in $kg$ $m^{-3}$. 
-
-
-%%Boundary conditions
-
-%%Dt and courant number
-
-%%Density calculations
-
-%%Volume determination, %%Source, Sink of Salt
-\subsection{Source-sink and advection}
-The volume of water that moves every time increment through the strait that connects the two basins, is determined by multiplying its width, depth and the lateral flow velocity through the strait. When the density of the bottom waters in the shallow basin is greater then that of the bottom waters in the deep basin, the flow of salt water from the shallow basin to the deep basin is initiated. The total amount of salt that is moved in this exchange is determined by multiplying the volume of water moved, with the salinity of the source. The impact this amount of transported salt has on a basins is dependent on the total volume of the basin in question. This exchange of salt is implemented through the source-sink term (\textbf{S}), as shown in equation~\ref{eq:FTCS}. \textbf{S} is calculated using equation~\ref{eq:Source-Sink} and is either positive or negative depending on whether it represents a sink or a source, respectively.
-\begin{equation}
-    S = \pm h_{source} \frac{ z_{strait} x_{strait} U_{lat} }{A_{sink} z_u} 
-    \label{eq:Source-Sink}
-\end{equation}
-Where \textbf{h}$_{source}$ is the salinity of the source in $kg \hspace{0.8mm} m^{-3}$, \textbf{U}$_{lat}$ is the lateral flow velocity in $ms^{-1}$, $A_{sink}$ is the surface area of the sink basin in $m^2$, \textbf{z}$_u$ is the vertical extent of the flow in $m$ and \textbf{x}$_{strait}$ and \textbf{z}$_{strait}$ are the strait width and depth, respectively, in $m$.
-
-The physical replacement of the bottom waters as a result of the lateral flow is captured in the advection, where advection is set to be upward in the deep basin and downward in the shallow basin. The value of the advection is equal to the volume of lateral flow per second, divided by the surface area of the basin in question. 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%% Ref mod output
-
-\section{Understanding the model}
-In order to get a grasp on the basics of the model, some results from simplified scenarios are shown in this chapter. The basic boundary conditions are discussed as well as the relation between the temperature, salinity and density. All model cases that will be discussed are deviations from a standard model case of with the starting parameters are shown in appendix \ref{app:standard_parameters}.
-
-\subsection{Forcing}
-The last year of the ramp period is shown in figure~\ref{fig:SpinUp}. Here, the amplitude of the forcing is at its maximum. Only the diffusion and the boundary conditions are active in this stage. 
-The mean, as well as the amplitude of the forcing differ between the temperature and the salinity, but their general shape is identical. Both the temperature and salinity of the surface water increase from march until June and decrease from September until December. 
-
-During the ramp period, the temperature, salinity and density profiles show a symmetrical overall shape of the plot (see figure~\ref{fig:SpinUp}). This shape follows from the perfectly sinusoidal cyclicity of the forcing that is centered around zero. Below about forty metres there is no influence of the forcing, for the background diffusion is not quick enough to reach that depth within a year. 
+Where $r_0$ = -15.654, $\alpha$ = 0.4309 and $\beta$ = 0.936, as determined by \cite{ivanov2002model}. $\rho$ is the density in $kg$ $m^{-3}$, $\rho_{ref}$ is the reference density of 1e3 $kg$ $m^{-3}$, T is the temperature in $^{\circ} C$ and S is the salinity in $kg$ $m^{-3}$. 
 
 % Fig SpinUp
 %-------------------
@@ -202,9 +171,6 @@ During the ramp period, the temperature, salinity and density profiles show a sy
 \caption{Last year of the 10-year Spin-Up period. This data was generated using an instability check in the top node instead of a whole column check for instability.}
 \label{fig:SpinUp}
 \end{figure*}
-\subsection{Density profile}
-The shape of the density plot is identical to those of the temperature and salinity, but it shows a reverse correlation, where the density of the surface waters is highest in January and February and lowest in July and August. 
-The behaviour of the density profile is fully dependent on the values of the temperature and salinity at that depth as can be deduced from equation \ref{eq:state} and can also be reversed. This is is shown in figure \ref{fig:SpinUp_dencity_balance_example}, where the salinity has a diffusivity that is an order of magnitude lower then that of the temperature. In this scenario, the inverse correlation of the density holds from the bottom up to a depth of about seven metres, where a turning point is reached. For the top few metres, the correlation is no longer inverse. %This is discussed in section \ref{sect:diff_and_bcl}
 
 % Low salt_diff_amp
 %
@@ -225,12 +191,24 @@ The behaviour of the density profile is fully dependent on the values of the tem
 \label{fig:SpinUp_dencity_balance_example}
 \end{figure*}
 
-The lower diffusivity of the salinity compared to that of the temperature, has two significant consequences. The first of these is the reduced depth to which the salinity forcing can penetrate within a given year. The second consequence is the dependence of the forcing on the diffusivity in the model. Lower diffusivity results in higher forcing on the salinity, as mentioned in section \ref{sect:boundary_conditions}. A higher forcing, results in a higher amplitude in the salinity values. This means that, during winter, the surface water is less saline than for example that in figure \ref{fig:SpinUp}, resulting in a stable density distribution during winter and a regular linear relation between the density and the temperature and salinity. Since this effect only penetrates the water column for the first few metres, deeper in the column the temperature has more impact and the inverse balance of the density curve as seen in figure \ref{fig:SpinUp} is restored. This can be deduced from the equation of state as well (equation \ref{eq:state}), where the density decreases in a given location if $\alpha T$ increases more rapidly then $\beta S$ or $\beta S$ decreases more rapidly then $\alpha T$. The latter is the case in figure \ref{fig:SpinUp_dencity_balance_example}, where the value of $\beta S$ decreases significantly faster with depth then $\alpha T$. If the amplitude of evaporation forcing is significantly higher then the amplitude of the heat flux forcing, the salinity of the water will control the density profile. If that is the case, and assuming there is no net evaporation, the surface water lacks the salinity to become dense enough during winter to become unstable, while the water becomes so saline during summer that the water column becomes unstable, despite its high temperature.
- 
-\subsection{The transition period as an example of column check method differences}
-\label{sect:transition}
-\subsubsection{Results of the transition case}
-The transition around the tenth year is shown in in figure~\ref{fig:Transition}. From April year 10, mixing is turned on. Around September, the top node is the same density as the one below it. From this moment onward, mixing takes place. In October, the top 30 or so metres are mixing, after which this is the case for the entire column. From march onward the mixing has stopped. This pattern of mixing only in winter results in an asymmetric profile, as shown in figure~\ref{fig:Conv_Only}. During the winter mixing, the profile is almost straight, though slightly inclined due to the finiteness of the diffusivity constant. From April until September, figure \ref{fig:Transition} resembles figure \ref{fig:SpinUp}. As the fall progresses, an unstable column develops at the surface and increases in dept as the surface water cools. 
+%%Boundary conditions
+
+%%Dt and courant number
+
+%%Density calculations
+
+%%Volume determination, %%Source, Sink of Salt
+\subsection{Source-sink and advection}
+The volume of water that moves every time increment through the strait that connects the two basins, is determined by multiplying its width, depth and the lateral flow velocity through the strait. When the density of the bottom waters in the shallow basin is greater then that of the bottom waters in the deep basin, the flow of salt water from the shallow basin to the deep basin is initiated. The total amount of salt that is moved in this exchange is determined by multiplying the volume of water moved, with the salinity of the source. The impact this amount of transported salt has on a basins is dependent on the total volume of the basin in question. This exchange of salt is implemented through the source-sink term (\textbf{S}), as shown in equation~\ref{eq:FTCS}. \textbf{S} is calculated using equation~\ref{eq:Source-Sink} and is either positive or negative depending on whether it represents a sink or a source, respectively.
+\begin{equation}
+    S = \pm h_{source} \frac{ z_{strait} x_{strait} U_{lat} }{A_{sink} z_u} 
+    \label{eq:Source-Sink}
+\end{equation}
+Where \textbf{h}$_{source}$ is the salinity of the source in $kg \hspace{0.8mm} m^{-3}$, \textbf{U}$_{lat}$ is the lateral flow velocity in $ms^{-1}$, $A_{sink}$ is the surface area of the sink basin in $m^2$, \textbf{z}$_u$ is the vertical extent of the flow in $m$ and \textbf{x}$_{strait}$ and \textbf{z}$_{strait}$ are the strait width and depth, respectively, in $m$.
+
+The physical replacement of the bottom waters as a result of the lateral flow is captured in the advection, where advection is set to be upward in the deep basin and downward in the shallow basin. The value of the advection is equal to the volume of lateral flow per second, divided by the surface area of the basin in question. 
+
+
 
 % Fig Transition
 %-------------------
@@ -241,7 +219,25 @@ The transition around the tenth year is shown in in figure~\ref{fig:Transition}.
 \label{fig:Transition}
 \end{figure*}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Ref mod output
 
+\section{Understanding the model}
+In order to get a grasp on the basics of the model, some results from simplified scenarios are shown in this chapter. The basic boundary conditions are discussed as well as the relation between the temperature, salinity and density. All model cases that will be discussed are deviations from a standard model case of with the starting parameters are shown in appendix \ref{app:standard_parameters}.
+
+\subsection{Forcing}
+\subsubsection{Results}
+The last year of the ramp period is shown in figure~\ref{fig:SpinUp}. Here, the amplitude of the forcing is at its maximum. Only the diffusion and the boundary conditions are active in this stage. 
+The mean, as well as the amplitude of the forcing differ between the temperature and the salinity, but their general shape is identical. Both the temperature and salinity of the surface water increase from march until June and decrease from September until December. 
+
+\subsubsection{Discussion}
+During the ramp period, the temperature, salinity and density profiles show a symmetrical overall shape of the plot (see figure~\ref{fig:SpinUp}). This shape follows from the perfectly sinusoidal cyclicity of the forcing that is centered around zero. Below about forty metres there is no influence of the forcing, for the background diffusion is not quick enough to reach that depth within a year. 
+
+The lower diffusivity of the salinity compared to that of the temperature, has two significant consequences. The first of these is the reduced depth to which the salinity forcing can penetrate within a given year. The second consequence is in the dependence of the forcing on the diffusivity in the model. Lower diffusivity results in higher forcing on the salinity, as mentioned in section \ref{sect:boundary_conditions}. A higher forcing, results in a higher amplitude in the salinity values. This means that, during winter, the surface water is less saline than for example that in figure \ref{fig:SpinUp}, resulting in a stable density distribution during winter and a regular linear relation between the density and the temperature and salinity. Since this effect only penetrates the water column for the first few metres, deeper in the column the temperature has more impact and the inverse balance of the density curve as seen in figure \ref{fig:SpinUp} is restored. This can be deduced from the equation of state as well (equation \ref{eq:state}), where the density decreases in a given location if $\alpha T$ increases more rapidly then $\beta S$ or $\beta S$ decreases more rapidly then $\alpha T$. The latter is the case in figure \ref{fig:SpinUp_dencity_balance_example}, where the value of $\beta S$ decreases significantly faster with depth then $\alpha T$. If the amplitude of evaporation forcing is significantly higher than the amplitude of the heat flux forcing, the salinity of the water will control the density profile. If that is the case, and assuming there is no net evaporation, the surface water lacks the salinity to become dense enough during winter to become unstable, while the water becomes so saline during summer that the water column becomes unstable, despite its high temperature.
+ 
+\subsection{The transition period as an example of column check method differences}
+\label{sect:transition}
+\subsubsection{Results of the transition case}
+The transition around the tenth year is shown in in figure~\ref{fig:Transition}. From April year 10, mixing is turned on. Around September, the top node is the same density as the one below it. From this moment onward, mixing takes place. In October, the top 30 or so metres are mixing, after which this is the case for the entire column. From march onward the mixing has stopped. This pattern of mixing only in winter results in an asymmetric profile, as shown in figure~\ref{fig:Conv_Only}. During the winter mixing, the profile is almost straight, though slightly inclined due to the finiteness of the diffusivity constant. From April until September, figure \ref{fig:Transition} resembles figure \ref{fig:SpinUp}. As the fall progresses, an unstable column develops at the surface and increases in dept as the surface water cools. 
 
 % Fig Conv Only
 %-------------------
@@ -262,7 +258,7 @@ It turns out however, that the whole column check is more stabel then the top-do
 The stability of the column is mainly determined by the density of the surface waters and therefore, ultimately determined by the balance between $\alpha T$ and $\beta S$ (equation \ref{eq:state}) at the surface. By altering either the heat flux or the evaporation, the stability behavior of the column can be investigated.
 
 \subsubsection{Results}
-Figure \ref{fig:summer_mixing} shows the results of a run with an evaporation amplitude of 0.6 rather then the standard 0.3. The mixing now occurs in summer while the column is stable in winter. The overall shape of the profile is rather the same, but the density is now almost a direct image of the temperature and salinity rather than a mirror image, as is the case in figure \ref{fig:Conv_Only}. 
+Figure \ref{fig:summer_mixing} shows the results of a run with an evaporation amplitude of 0.6 rather then the standard 0.3. The mixing now occurs in summer while the column is stable in winter. The overall shape of the profile is rather the same, but the density is now almost a direct copy of the temperature and salinity rather than a mirror image, as is the case in figure \ref{fig:Conv_Only}. 
 % % Fig with summer mixing, kleine uitslag
 % %-------------------
 \begin{figure*}
@@ -326,6 +322,24 @@ The periods of mixing in the dead sea are determined by the temperature profile.
 \end{figure*}
 
 
+
+\subsubsection{Results}
+% Wrap-Fig Legend for discuss adv and Fig SS
+%----------------------------------------
+A result of a standard model case (appendix \ref{app:standard_parameters}) with no advection and an increased exchanging flow from 1e-5 to 5e-3 Sv is shown in figure \ref{fig:no_adv}. The result of the same case but \textit{with} advection is shown in figure \ref{fig:with_adv_geen_uitslag}. In both instances, part of the column mixes during fall and the entire column mixes from January to March, in both the deep and marginal basins. The marginal basin of figure \ref{fig:no_adv} very strongly resembles figure \ref{fig:Conv_Only}, as does the deep basin with the exception of the increased salinity at its bottom. Only one pulse of exchanging flow occurred. This pulse was large enough to create a clear salinity access at the bottom of the deep basin in one exchange.
+In a case with advection, the dense water body at the bottom of the deep basin is generally a lot less pronounced or not present at all, as is the case in figure \ref{fig:with_adv_geen_uitslag}. A model run with advection and a flow of 40 Sv is shown in figure \ref{fig:with_adv_large_effect}. With this large exchanging flow, the workings of the code can be easily analyzed in report format, for the effects are large enough to visualize in a plot.% This figure is discussed in section \ref{sect:large_effect}. 
+
+
+% % Fig with adv, ook uitslag onderaan
+% %-------------------
+% \begin{figure*} 
+% \centering
+% \includegraphics[width=1\textwidth,keepaspectratio]{"with adv good".png}
+% \caption{Model run with advection. A color legend is shown in figure \ref{fig:legend}.}
+% \label{fig:with_adv}
+% \end{figure*} \todo{mention why basin is so shallow}
+
+
 % % Fig with adv, grote uitslag, genummerd
 % %-------------------
 \begin{figure*}
@@ -343,32 +357,12 @@ The periods of mixing in the dead sea are determined by the temperature profile.
 \label{fig:with_adv_large_effect}
 \end{figure*}
 
-
-
-\subsubsection{Results}
-% Wrap-Fig Legend for discuss adv and Fig SS
-%----------------------------------------
-A result of a standard model case (appendix \ref{app:standard_parameters}) with no advection and an increased exchanging flow from 1e-5 SV to 5e-3 SV is shown in figure \ref{fig:no_adv}. The result of the same case but \textit{with} advection is shown in figure \ref{fig:with_adv_geen_uitslag}. In both instances, part of the column mixes during fall and the entire column mixes from January to March, in both the deep and marginal basins. The marginal basin of figure \ref{fig:no_adv} very strongly resembles figure \ref{fig:Conv_Only}, as does the deep basin with the exception of the increased salinity at its bottom. Only one pulse of exchanging flow occurred. This pulse was large enough to create a clear salinity access at the bottom of the deep basin in one exchange.
-In a case with advection, the dense water body at the bottom of the deep basin is generally a lot less pronounced or not present at all, as is the case in figure \ref{fig:with_adv_geen_uitslag}. A model run with advection and a flow of 40 Sv is shown in figure \ref{fig:with_adv_large_effect}. With this large exchanging flow, the workings of the code can be easily analyzed in report format, for the effects are large enough to visualize without zooming.% This figure is discussed in section \ref{sect:large_effect}. 
-
-
-% % Fig with adv, ook uitslag onderaan
-% %-------------------
-% \begin{figure*} 
-% \centering
-% \includegraphics[width=1\textwidth,keepaspectratio]{"with adv good".png}
-% \caption{Model run with advection. A color legend is shown in figure \ref{fig:legend}.}
-% \label{fig:with_adv}
-% \end{figure*} \todo{mention why basin is so shallow}
-
-
-
 \subsubsection{Discussion}
 \label{sect:SS_and_adv_discussion}
 % The exchange between the marginal basin and the deep basin, shown in figure \ref{fig:no_adv}, lowers the total amount of salt in the marginal basin, for the water that flowed out is more saline then the water that flowed in. Then, when mixing occurs during each consecutive summer in the marginal basin, saline water is resupplied to the bottom waters. In the deep basin, the saline water body is stable but is shrinking due to diffusion. As the deep saline water is largely diffused away, a new dense plume from the marginal basin may arrive to repeat the process. 
 An initial pulse of exchanging flow occurres because the bottom of the marginal basin experiences slight changes in temperature and salinity whereas the bottom of the deep basin is too deep to experience changes created through surface forcing. The exchange between the marginal basin and the deep basin, shown in figure \ref{fig:no_adv}, slightly lowered the total amount of salt in the marginal basin, for the water that flowed out was more saline then the water that flowed in. While salt is directly resupplied to the bottom of the marginal basin due to the unstable density configuration, the excess salt in the bottom of the deep basin created a stable configuration. This excess salinity only decreases due to the background diffusion. When the excess salinity has been reduced to its original state due to the background diffusion, and the bottom of the marginal basin is sufficiently replenished, a new pulse could occur. However, since the first pulse slightly altered the average salinity of both basins, it can take years for the marginal basin bottom waters to once again become more saline then the bottom waters of the deep basin. In fact, if the difference in average salinity is larger then the yearly difference due to forcing, no second pulse will ever occur, for no other factors influence the density distribution in this model scenario. Realistically, this scenario is impossible for it would create space problems due to an incomplete flow cycle caused by the lack of advection.
 The scenario shown in figure \ref{fig:with_adv_geen_uitslag} was initialized with the same conditions as the one shown in figure \ref{fig:no_adv} except that, during the periods of exchange, advection was allowed. As is evident when comparing the two figures, advection completely removed the effect of the source-sink term. Any water that arrived in the deep basin was directly being advected up, thus not allowing for a dense water body at the bottom of the deep basin to form. In order to investigate how the model handles these advection situations, the model was run with a flow of 40 Sv. This amount of volume is in no way realistic but makes it easier to investigate the workings of the model. Figure \ref{fig:with_adv_large_effect} shows an annotated plot of this model run. This figure shows that right after the initiation of flow (1), the deep basin is fully stable with denser than average waters at the bottom and the least dense water at the top. Most of any negative density anomaly at the base of the marginal basin is directly resupplied by mixing. From the initiation of flow (1) until the next mixing during winter (3), the salt anomalies dissipate slowly due to diffusion (2). When the columns mix in winter, the bottom waters of the deep column are unaffected due to their stable state. During this mixing period, some salt is resupplied to the bottom of the basin, leading to a small jump in the density plot. 
-Aside form the large amount of flow required for this effect to be visible, an issue becomes apparent when analyzing the results. Due to the technical choice of imitating the flow with the source-sink term, combined with this large flow of 40SV, the bottom waters of the deep basin become significantly more saline then the bottom of the marginal basin ever was. 
+Aside form the large amount of flow required for this effect to be visible, an issue becomes apparent when analyzing the results. Due to the technical choice of imitating the flow with the source-sink term, combined with this large flow of 40 Sv, the bottom waters of the deep basin become significantly more saline then the bottom of the marginal basin ever was. 
 
 In order to obtain a dense saline brine at the bottom of the deep basin, the bottom of the marginal basin clearly needs to be significantly more saline then is achieved through the parameters used in the runs shown so far. This could be done by increasing the total amount of salt in the marginal basin through net evaporation or by allowing for faster transport of salt to the bottom of the marginal basin. The latter can be achieved by decreasing the basin depth or increasing the amount of diffusion during mixing. A combination of these is likely required to achieve the sought effect. These factors will be discussed in section \ref{sect:imprtant_parameters}.
 
@@ -397,10 +391,15 @@ In order to obtain a dense saline brine at the bottom of the deep basin, the bot
 % \caption{Model run with advection. The same input parameters as the run shown in figure \ref{fig:no_adv} were used.}
 % \label{fig:with_adv_geen_uitslag}
 % \end{figure*}
-%%%%%%%%%%%%%%%% Main section
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Main section %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Important factors on the formation of a deep brine}
 \label{sect:imprtant_parameters}
-As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant parameters are those that greatly influence the amount of salt in the bottom of the marginal basin. Likely candidates are the marginal basin depth, the background diffusion and net evaporation. In order for a saline marginal basin to have a significant impact on the salinity of the deep waters, the flow between the basins would need to be sufficient but should not reach unrealistic proportions, as is the case in figure \ref{sect:large_effect}. When the exchanging flow is small, the comparative volumes of the basins needs to be such that the total amount of salt in the marginal basin is not negligible when compared to that of the deep basin. These factors and their impact on the possible existence of a deep salt brine will therefore be investigated in the following sections.
+As discussed in the previous section, the most relevant parameters are those that greatly influence the amount of salt in the bottom of the marginal basin. Likely candidates are the marginal basin depth, the background diffusion and net evaporation. In order for a saline marginal basin to have a significant impact on the salinity of the deep waters, the flow between the basins would need to be sufficient but should not reach unrealistic proportions, as is the case in figure \ref{fig:with_adv_large_effect}. When the exchanging flow is small, the comparative volumes of the basins needs to be such that the total amount of salt in the marginal basin is not negligible when compared to that of the deep basin. These factors and their impact on the possible existence of a deep salt brine will therefore be investigated in the following sections.
 
 % %% 300m stable
 % \begin{figure*}
@@ -446,6 +445,22 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 
 % % Fig with high background diff
 % %-------------------
+
+
+\subsection{Results}
+
+\subsubsection{Marginal basin depth}
+\label{sect:mar_basin_depth}
+Figure \ref{fig:Very_shallow_basin} shows the results of a standard case with a 60m deep marginal basin. A minor increase in salinity has been achieved. Incremental steps are made towards the redistribution of salinity, rather then the one pulse in case \ref{fig:no_adv}. 
+
+
+\subsubsection{Background diffusivity}
+Figure \ref{fig:high_db_success} shows the results of a standard run and a background diffusivity of 1e-3.0. The depth to which the surface forces penetrate, as well as the maximum deviation from the average temperature at the surface differ from the previous scenario. The bottom of the marginal basin experiences significance variation throughout the year. A very small increase in salinity is observed in the bottom of the deep basin, of which the largest pulse occurred in the first year after the spinup. The average values of both basins were almost unaffected by the exchanging flows as can be observed in figure \ref{fig:high_bg_diff_means}.
+
+\subsubsection{A depth and diffusivity hybrid}
+A decrease in marginal basin depth on top of an increased background diffusivity (figure \ref{fig:hybrid}) had a large effect on the salinity at the bottom of the deep basin compared to the case shown in figure \ref{fig:high_db_success}. The exchanging flow occurs every winter. The salinity at the bottom of the deep basin shows a yearly net increase, as does the density in the marginal basin. The density profiles become increasingly linear as time progresses, with the marginal basin showing linearly decreasing density with depth and the middle of the deep basin showing a near linear increase in density with depth. 
+Unlike the previous case, all average values shown in figure \ref{fig:hybrid_means} significantly increase with time after year 10. The increases seem to be exponential in nature and will be addressed in section \ref{sect:totals_problem}. 
+
 \begin{figure*}
 %% subfig 1
 \begin{subfigure}[h]{0.7\textwidth}
@@ -468,6 +483,18 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \caption{Mean values over time corresponding to the scenario shown in figure \ref{fig:high_db_success}}
 \label{fig:high_bg_diff_means}
 \end{figure*}\hfill
+
+
+\subsubsection{Net Evaporation}
+Figure \ref{fig:high_db_success} shows the results of a standard run and a net evaporation rate resulting in an increase of 0.001 $kg/m^3$ salt per second. The marginal basin yearly increases in salinity as a whole. In the deep basin, the surface and the deep part of the basin increase yearly in salinity as well, with the middle of the column dragging behind.
+
+\subsection{Unintended increases and decreases in the total salt and heat content}
+\label{sect:totals_problem}
+Figure \ref{fig:hybrid_means} reveals an error in the code, where all averages are increasing even though no net evaporation is active. While increases and decreases may occur in one basin, it should be at the expense of the total amount of the same property in the other basin. However, whenever prolonged periods of continuous advection occur, like in the case shown in figures \ref{fig:high_db_success} and \ref{fig:high_bg_diff_means}, the total amount of salt and heat in the system will be affected.
+
+The two types of column stability check, mentioned in section \ref{sect:stability_methods}, also affect the outcome of this problem. The choice between a whole column check or a bottom up/top down check should be one based on model efficiency and desired detail. Instead, it appears that the total amount of salt and heat in the system systematically increases every year when the whole column check is used, and it systematically decreases every year when the top down/bottom up check is used. The problem effects the salinity more then it does the temperature, though the problem systematically occurs in both. 
+The error is smallest when the whole column check is used, which is why this method is used in this research. The effects are however still rather significant when long time spans containing regular exchanging flow are investigated. It was found that the undesired effect is decreased in magnitude when the top and bottom three nodes of the columns are assigned a permanent advection value of zero. It is empirically found that more then three nodes no longer significantly diminish the error. While the error is sometimes decreased by a factor of five using this measure, the root cause of this problem has not yet been discovered so far. 
+
 
 
 % % Hybrid fig
@@ -514,36 +541,12 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \end{figure*}
 
 
-
-\subsection{Results}
-
-\subsubsection{Marginal basin depth}
-\label{sect:mar_basin_depth}
-Figure \ref{fig:Very_shallow_basin} shows the results of a standard case with a 60m deep marginal basin. A minor increase in salinity has been achieved. Incremental steps are made towards the redistribution of salinity, rather then the one pulse in case \ref{fig:no_adv}. 
-
-
-\subsubsection{Background diffusivity}
-Figure \ref{fig:high_db_success} shows the results of a standard run and a background diffusivity of 1e-3.0. The depth to which the surface forces penetrate, as well as the maximum deviation from the average temperature at the surface differ from the previous scenario. The bottom of the marginal basin experiences significance variation throughout the year. A very small increase in salinity is observed in the bottom of the deep basin, of which the largest pulse occurred in the first year after the spinup. The average values of both basins were almost unaffected by the exchanging flows as can be observed in figure \ref{fig:high_bg_diff_means}.
-
-\subsubsection{A depth and diffusivity hybrid}
-The decrease in marginal basin depth of the case shown in figure \ref{fig:hybrid} compared to the case shown in figure \ref{fig:high_db_success} had a large effect on the salinity at the bottom of the deep basin. The exchanging flow occurs every winter. The sailinity at the bottom of the deep basin shows a yearly net increase, as does the density in the marginal basin. The density profiles become increasingly linear as time progresses, with the marginal basin showing linearly decreasing density with depth and the middle of the deep basin showing a near linear increase in density with depth. 
-Unlike the previous case, all average values shown in figure \ref{fig:hybrid_means} significantly increase with time after year 10. The increases seem to be exponential in nature and will be addressed in section \ref{sect:totals_problem}. 
-
-\subsubsection{Net Evaporation}
-Figure \ref{fig:high_db_success} shows the results of a standard run and a net evaporation rate resulting in an increase of 0.001 $kg/m^3$ salt per second. The marginal basin yearly increases in salinity as a whole. In the deep basin, the surface and the deep part of the basin increase yearly in salinity as well, with the middle of the column dragging behind.
-
-\subsection{Unintended increases and decreases in the total salt and heat content}
-\label{sect:totals_problem}
-Figure \ref{fig:hybrid_means} reveals an error in the code, where all averages are increasing even though no net evaporation is active. While increases and decreases may occur in one basin, it should be at the expense of the total amount of the same property in the other. However, whenever prolonged periods of continuous advection occur, like in the case shown in figures \ref{fig:high_db_success} and \ref{fig:high_bg_diff_means}, the total amount of salt and heat in the system will be affected.
-
-The two types of column stability check, mentioned in section \ref{sect:stability_methods}, also affect the outcome of this problem. The choice between a whole column check or a bottom up/top down check should be one based on model efficiency and desired detail. Instead, it appears that the total amount of salt and heat in the system systematically increases every year when the whole column check is used, and it systematically decreases every year when the top down/bottom up check is used. The problem effects the salinity more then it does the temperature, though the problem systematically occurs in both. 
-The error is smallest when the whole column check is used, which is why this method will be used in this research. The effects are however still rather significant when long time spans containing regular exchanging flow are investigated. It was found that the undesired effect is decreased in magnitude when the top and bottom three nodes of the comumns are assigned a permanent advection value of zero. It is emperically found that more then 3 nodes no longer significantly deminish the error. While the error is somtemes decreased by a factor of 5 using this measure, the root cause of this problem has not yet been discovered so far. 
-
 \subsection{Discussion}
 The effects of the surface heat flux and evaporation decrease with depth and can only penetrate down to a maximum depth, the extend of which is determined by the speed of the diffusivity. Shallower basins will therefore experience changes as a result of forcing more quickly and more severely then deeper basins. Increased depth of penetration of surface forcing due to increased background diffusivity goes hand in hand with a reduction in maximum deviation from the mean surface value. When more salt or heat is transported down, there will subsequently be less of it left at the surface. On a similar note, larger background diffusivity more quickly reduces excess salinity in bottom waters.
 Neither a siginificant reduction in marginal basin depth nor a significant increase in background diffusivity resulted in a pronounced increase in salinity in the bottom of the deep basin. The combination of the two measures did accomplish this. Alternatively, very extreme variants of the two individual cases are also capable of producing saline deep basin bottom waters.
 
-When the evaporation is significantly higher then the influx of fresh water, the whole column will become more saline. This has a larger effect on the marginal basin, for it contains a smaller volume of water. This large effect on the evaporation on the salinity and, by extension, density of the marginal basin results in a yearly increase in the salinity at the bottom of the deep basin. The density of the marginal basin as a whole very directly follows the density at the bottom of the deep basin. While the surface and bottom of the deep basin are increasing rapidly in salinity almost as a direct result of the net increase, the rate of increase in salinity in the middle of the deep basin is limited by the rate of background diffusivity.
+When the evaporation is significantly higher than the influx of fresh water, the whole column will become more saline. This has a larger effect on the marginal basin, for it contains a smaller volume of water. This large effect on the evaporation on the salinity and, by extension, density of the marginal basin results in a yearly increase in the salinity at the bottom of the deep basin. The density of the marginal basin as a whole very directly follows the density at the bottom of the deep basin. While the surface and bottom of the deep basin are increasing rapidly in salinity almost as a direct result of the net increase, the rate of increase in salinity in the middle of the deep basin is limited by the rate of background diffusivity.
+
 An expected result of the net evaporation was that the marginal basin would be nearly permanently mixing. During winter the columns are unstable due to the cooling, as is the case with most other model output in this report. During summer, the increased overall evaporation would then have resulted in extra saline surface waters, creating instability during summer not unlike that described in section \ref{sect:Summer_mixing_discussion}. However, the net surface temperature is also increasing (figure \ref{fig:net_evap}) which counteracts the possibility of mixing in summer. This significant increase in surface temperature was unexpected and is currently thought to either be a result of the density dependence of the heat forcing or a result of the problem discussed in section \ref{sect:totals_problem}. This phenomenon has not yet sufficiently been investigated and is a point of consideration for future studies building on this research.
 
 
@@ -813,14 +816,14 @@ During the summer and fall, salt diffuses up from the saline bottom waters in th
 It was suggested by \cite{garcia2018geochemical} that the brine would extend roughly from the base of the marginal basin to the bottom of the deep basin. In the conceptual box model this would also make sense, for dense water in the marginal basin may as well replace water slightly higher in the deep basin if the bottom water of the deep basin is too dense to be replaced with the dense water from the marginal basin. This could happen as long as that water is below the base of the marginal basin. This has not been implemented in the model, but may be worth investigating in further research.
 
 \subsubsection{Buoyancy}
-This model deals with instability by mixing the unstable columns, for this is the observed process in the Dead Sea. This model does not take into account any other type of gravity interaction with the water, except for the assumption that dense water from the bottom of the marginal basin flows to the bottom of the deep basin if the density allows for it, which is hard coded into the model. When a dense water mass resides below the surface and is considered unstable, the diffusivity is increased drastically to imitate mixing, meaning that the dense mass is moved both up and down, where the water is less dense. The possibility of this dense water body to sink due to buoyancy forces rather then be diffused up as well, is not considered in this model. Future research could investigate the importance of the degree of mixing between a dense water body and the surrounding waters, while taking buoyancy into account. 
+This model deals with instability by mixing the unstable columns, for this is the observed process in the Dead Sea. This model does not take into account any other type of gravity interaction with the water, except for the assumption that dense water from the bottom of the marginal basin flows to the bottom of the deep basin if the density allows for it, which is hard coded into the model. When a dense water mass resides below the surface and is considered unstable, the diffusivity is increased drastically to imitate mixing, meaning that the dense mass is moved both up and down, where the water is less dense. Restricted mixing of saline water bodies with the environment and the possibility of this dense water body to sink due to buoyancy forces rather then be diffused up as well, is not considered in this model.
 
 \section{Conclusion}
 If the MSC evaporite deposits originated from a deep sea, a dense brine may have existed at the bottom of the basin from where the evaporites precipitated. This deep brine may have formed as a result of the shallow marginal basins that acted as large evaporative pools where water may have flowed in at the top and out at the bottom. This flow could have been driven by density differences between the bottom waters of the marginal basin and the water in the deep basin that resides below the depth of the marginal basin. Since small differences in salinity are quickly re-distributed due to diffusion of salt, the difference in salinity would either need to be substantial or regularly supplemented. Two methods of achieving very saline bottom waters in the marginal basin were investigated. 
 
 The first is net evaporation averaged out over the year. If the net evaporation per unit of surface area does not differ between the deep and marginal basins, the effect is larger in the marginal basins due to their smaller volume. In periods where the water column is mixing, salt is brought to the bottom of the marginal basin from where it may flow into the deep basin. 
 
-The second method to achieve a similar effect, where no net evaporation is required, is when the effects of the increase in salinity of the basins during summer are able to reach the bottom of the marginal basin. One scenario in which this can happen is in a basin that is shallow enough for the effects to reach the bottom before summer is over. In our numerical experiment this scenario was capable of producing a small increase in salinity at the bottom of the deep basin, with a marginal basin depth of a mere sixty metres. Increasing the background diffusivity of salt is a second way to have the seasonal effects penetrate deeper into the water column. This scenario also succeeded in creating a slightly more saline deep water. The combined effect of a shallow marginal basin with high background diffusion was capable of producing a significant salt excess at the bottom of the deep basin, but the extend of the salt excess was more limited then a scenario involving net evaporation. 
+The second method to achieve a similar effect, where no net evaporation is required, is when the effects of the increase in salinity of the basins during summer are able to reach the bottom of the marginal basin. One scenario in which this can happen is in a basin that is shallow enough for the effects to reach the bottom before summer is over. In our numerical experiment this scenario was capable of producing a small increase in salinity at the bottom of the deep basin, with a marginal basin depth of a mere sixty metres. Increasing the background diffusivity of salt is a second way to have the seasonal effects penetrate deeper into the water column. This scenario also succeeded in creating a slightly more saline deep water. The combined effect of a shallow marginal basin with high background diffusion was capable of producing a significant salt excess at the bottom of the deep basin, though this scenario is still more limited then a scenario involving net evaporation. 
 A final scenario in which the saline summer waters can reach the bottom is through mixing in summer rather then in winter. While this scenario is not the current condition of the Dead Sea, this scenario can occur when the increase in density of the surface water in summer due to high evaporation is larger then the decreasing effect heating has on its density.
 
 This research is a first order approximation of the scenario and detailed scenarios of the climate and flow patterns during the MSC are beyond the scope of this research. Nevertheless, this research does indicate that it may be possible to create deep saline brines through high evaporation in marginal basins.
@@ -861,10 +864,10 @@ This research is a first order approximation of the scenario and detailed scenar
 \label{app:standard_parameters}
 \begin{table}[H]
 \begin{tabular}{lll}
-\textbf{Parameter}          &\textbf{Unit}                  & \textbf{Vlue} \\   
+\textbf{Parameter}          &\textbf{Unit}                  & \textbf{Value} \\   
 Depth\_Main\_basin          &{[}m{]}                        & 800       \\
 Depth\_sec.\_basin          &{[}m{]}                        & 150       \\
-tmax                        &{[}years{]}                    & 12        \\
+tmax                        &{[}years{]}                    & 20            \\
 Cp                          &{[}J/K{]}                      & 4.e3      \\
 dx                          &{[}m{]}                        & 1         \\
 pb                          &                               & -5.1      \\
