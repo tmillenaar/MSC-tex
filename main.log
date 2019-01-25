@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.23)  24 JAN 2019 23:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.21)  25 JAN 2019 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -858,11 +858,11 @@ File: Conv_only.png Graphic file (type png)
 <use Conv_only.png>
 Package pdftex.def Info: Conv_only.png  used on input line 249.
 (pdftex.def)             Requested size: 384.1096pt x 288.09827pt.
-<summer_mixing.png, id=355, 341.8371pt x 322.0833pt>
+<summer_mixing.png, id=355, 341.3553pt x 314.8563pt>
 File: summer_mixing.png Graphic file (type png)
 <use summer_mixing.png>
 Package pdftex.def Info: summer_mixing.png  used on input line 271.
-(pdftex.def)             Requested size: 298.75264pt x 281.50764pt.
+(pdftex.def)             Requested size: 298.75264pt x 275.56583pt.
 <summer_mixing_Legend.png, id=356, 155.3805pt x 327.8649pt>
 File: summer_mixing_Legend.png Graphic file (type png)
 <use summer_mixing_Legend.png>
@@ -887,13 +887,13 @@ File: 12-30_reduced_legend.png Graphic file (type png)
 <use 12-30_reduced_legend.png>
 Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 320.
 (pdftex.def)             Requested size: 85.35696pt x 170.42615pt.
-<with_adv_large_effect_40SV_altered.png, id=364, 1424.32124pt x 1342.01375pt>
+<with_adv_large_effect_40SV_altered.png, id=362, 1424.32124pt x 1342.01375pt>
 File: with_adv_large_effect_40SV_altered.png Graphic file (type png)
 <use with_adv_large_effect_40SV_altered.png>
 Package pdftex.def Info: with_adv_large_effect_40SV_altered.png  used on input 
 line 334.
 (pdftex.def)             Requested size: 298.75264pt x 281.4831pt.
-<with_adv_large_effect_40SV_Legend.png, id=365, 132.9768pt x 327.8649pt>
+<with_adv_large_effect_40SV_Legend.png, id=363, 132.9768pt x 327.8649pt>
 File: with_adv_large_effect_40SV_Legend.png Graphic file (type png)
 <use with_adv_large_effect_40SV_Legend.png>
 Package pdftex.def Info: with_adv_large_effect_40SV_Legend.png  used on input l
@@ -907,7 +907,7 @@ fect_40SV_Legend.png>]
 LaTeX Warning: Reference `sect:large_effect' on page 11 undefined on input line
  402.
 
-<60m_mar_depth_40yr.png, id=409, 341.3553pt x 329.0694pt>
+<60m_mar_depth_40yr.png, id=407, 341.3553pt x 329.0694pt>
 File: 60m_mar_depth_40yr.png Graphic file (type png)
 <use 60m_mar_depth_40yr.png>
 Package pdftex.def Info: 60m_mar_depth_40yr.png  used on input line 427.
@@ -916,46 +916,46 @@ File: 12-30_reduced_legend.png Graphic file (type png)
 <use 12-30_reduced_legend.png>
 Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 432.
 (pdftex.def)             Requested size: 85.35696pt x 170.42615pt.
-<high_bg_diff_kleine_uitslag.png, id=410, 341.3553pt x 335.0919pt>
+<high_bg_diff_kleine_uitslag.png, id=408, 341.3553pt x 335.0919pt>
 File: high_bg_diff_kleine_uitslag.png Graphic file (type png)
 <use high_bg_diff_kleine_uitslag.png>
 Package pdftex.def Info: high_bg_diff_kleine_uitslag.png  used on input line 45
 2.
 (pdftex.def)             Requested size: 298.75264pt x 293.27628pt.
-<high_bg_diff_kleine_uitslag_Legend.png, id=411, 266.6763pt x 326.9013pt>
+<high_bg_diff_kleine_uitslag_Legend.png, id=409, 266.6763pt x 326.9013pt>
 File: high_bg_diff_kleine_uitslag_Legend.png Graphic file (type png)
 <use high_bg_diff_kleine_uitslag_Legend.png>
 Package pdftex.def Info: high_bg_diff_kleine_uitslag_Legend.png  used on input 
 line 457.
 (pdftex.def)             Requested size: 85.35696pt x 104.6305pt.
-<high_bg_diff_kleine_uitslag_mean_values.png, id=412, 473.6094pt x 343.7643pt>
+<high_bg_diff_kleine_uitslag_mean_values.png, id=410, 473.6094pt x 343.7643pt>
 File: high_bg_diff_kleine_uitslag_mean_values.png Graphic file (type png)
 <use high_bg_diff_kleine_uitslag_mean_values.png>
 Package pdftex.def Info: high_bg_diff_kleine_uitslag_mean_values.png  used on i
 nput line 466.
 (pdftex.def)             Requested size: 384.1096pt x 278.80948pt.
-<hybrid.png, id=415, 343.7643pt x 329.0694pt>
+<hybrid.png, id=413, 343.7643pt x 329.0694pt>
 File: hybrid.png Graphic file (type png)
 <use hybrid.png>
 Package pdftex.def Info: hybrid.png  used on input line 478.
 (pdftex.def)             Requested size: 298.75264pt x 285.99179pt.
-<Hybrid_Legend.png, id=416, 266.6763pt x 326.9013pt>
+<Hybrid_Legend.png, id=414, 266.6763pt x 326.9013pt>
 File: Hybrid_Legend.png Graphic file (type png)
 <use Hybrid_Legend.png>
 Package pdftex.def Info: Hybrid_Legend.png  used on input line 483.
 (pdftex.def)             Requested size: 85.35696pt x 104.6305pt.
-<hybrid_means.png, id=417, 484.209pt x 312.6882pt>
+<hybrid_means.png, id=415, 484.209pt x 312.6882pt>
 File: hybrid_means.png Graphic file (type png)
 <use hybrid_means.png>
 Package pdftex.def Info: hybrid_means.png  used on input line 492.
 (pdftex.def)             Requested size: 384.1096pt x 248.05632pt.
-<001_net_evap_40yr_3steps_V2.png, id=420, 352.1958pt x 322.0833pt>
+<001_net_evap_40yr_3steps_V2.png, id=418, 352.1958pt x 322.0833pt>
 File: 001_net_evap_40yr_3steps_V2.png Graphic file (type png)
 <use 001_net_evap_40yr_3steps_V2.png>
 Package pdftex.def Info: 001_net_evap_40yr_3steps_V2.png  used on input line 50
 4.
 (pdftex.def)             Requested size: 298.75264pt x 273.21182pt.
-<40yr_reduced_Legend.png, id=421, 477.785pt x 850.17625pt>
+<40yr_reduced_Legend.png, id=419, 477.785pt x 850.17625pt>
 File: 40yr_reduced_Legend.png Graphic file (type png)
 <use 40yr_reduced_Legend.png>
 Package pdftex.def Info: 40yr_reduced_Legend.png  used on input line 509.
@@ -996,19 +996,19 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 920.
 Here is how much of TeX's memory you used:
  19555 strings out of 494923
  358486 string characters out of 6180742
- 452034 words of memory out of 5000000
+ 452268 words of memory out of 5000000
  22404 multiletter control sequences out of 15000+600000
  15886 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,20n,77p,1860b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
-k> </home/timo/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600p
+ </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600p
+k> </home/mara/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600p
 k></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
@@ -1016,10 +1016,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (19 pages, 4422562 bytes).
+Output written on main.pdf (19 pages, 4376595 bytes).
 PDF statistics:
- 843 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
+ 841 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
  97 named destinations out of 1000 (max. 500000)
  446 words of extra memory for PDF output out of 10000 (max. 10000000)
 

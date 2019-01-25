@@ -185,7 +185,7 @@ The physical replacement of the bottom waters as a result of the lateral flow is
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Ref mod output
 
 \section{Understanding the model}
-In order to get a grasp on the basics of the model, some results from simplified scenarios are shown in this chapter. The basic boundary conditions are discussed as well as the relation between the temperature, salinity and density. All model cases that will be discussed are deviations from a standard model case of with the starting parameters are shown in appendix \ref{app:standard_parameters}
+In order to get a grasp on the basics of the model, some results from simplified scenarios are shown in this chapter. The basic boundary conditions are discussed as well as the relation between the temperature, salinity and density. All model cases that will be discussed are deviations from a standard model case of with the starting parameters are shown in appendix \ref{app:standard_parameters}.
 
 \subsection{Forcing}
 The last year of the ramp period is shown in figure~\ref{fig:SpinUp}. Here, the amplitude of the forcing is at its maximum. Only the diffusion and the boundary conditions are active in this stage. 
@@ -199,7 +199,7 @@ During the ramp period, the temperature, salinity and density profiles show a sy
 \centering
 \hspace*{-1.2cm}
 \includegraphics[width=1.05\textwidth,keepaspectratio]{SpinUp_year_9.png}
-\caption{Last year of the 10-year Spin-Up period.}
+\caption{Last year of the 10-year Spin-Up period. This data was generated using an instability check in the top node instead of a whole column check for instability.}
 \label{fig:SpinUp}
 \end{figure*}
 \subsection{Density profile}
@@ -221,7 +221,7 @@ The behaviour of the density profile is fully dependent on the values of the tem
 \includegraphics[width=\textwidth,keepaspectratio]{SDA-01_TDA-1_SpinUp_Legend.png}
 \label{fig:}
 \end{subfigure}\hfill
-\caption{Spin-Up period with a salinity diffusivity one tenth of the temperature diffusivity}
+\caption{Spin-Up period with a salinity diffusivity one tenth of the temperature diffusivity. }
 \label{fig:SpinUp_dencity_balance_example}
 \end{figure*}
 
@@ -229,7 +229,7 @@ The lower diffusivity of the salinity compared to that of the temperature, has t
  
 \subsection{Transition}
 \subsubsection{Results}
-The transition around the tenth year is shown in in figure~\ref{fig:Transition}. From April year 10, convection is turned on. Around September, the top node is the same density as the one below it. From this moment onward, mixing takes place. In October, the top 30 or so metres are mixing, after which this is the case for the entire column. From march onward the mixing has stopped. This pattern of mixing only in winter results in an asymmetric profile, as shown in figure~\ref{fig:Conv_Only}. During the winter mixing, the profile is almost straight, though slightly inclined due to the finiteness of the diffusivity constant. From April until September, figure \ref{fig:Transition} resembles figure \ref{fig:SpinUp}. As the fall progresses, an unstable column develops at the surface and increases in dept as the surface water cools. 
+The transition around the tenth year is shown in in figure~\ref{fig:Transition}. From April year 10, mixing is turned on. Around September, the top node is the same density as the one below it. From this moment onward, mixing takes place. In October, the top 30 or so metres are mixing, after which this is the case for the entire column. From march onward the mixing has stopped. This pattern of mixing only in winter results in an asymmetric profile, as shown in figure~\ref{fig:Conv_Only}. During the winter mixing, the profile is almost straight, though slightly inclined due to the finiteness of the diffusivity constant. From April until September, figure \ref{fig:Transition} resembles figure \ref{fig:SpinUp}. As the fall progresses, an unstable column develops at the surface and increases in dept as the surface water cools. 
 
 % Fig Transition
 %-------------------
@@ -247,12 +247,12 @@ The transition around the tenth year is shown in in figure~\ref{fig:Transition}.
 \begin{figure*}
 \centering
 \includegraphics[width=0.9\textwidth,keepaspectratio]{Conv_only.png}
-\caption{A typical year of a run with convection.}
+\caption{A typical year of a run with mixing. This data was generated using an instability check in the top node instead of a whole column check for instability.}
 \label{fig:Conv_Only}
 \end{figure*}
 
 \subsubsection{Discussion}
-Concerning the transition, as shown in figure~\ref{fig:Transition}, the mixing should start in April. This is namely the moment when convection is switched on, and the density in the top node is higher then the rest of the column. The mixing does however not occur until October, as read from figure~\ref{fig:Transition}. The cause of this is that the code begins the instability check by checking whether the top node is more dense then the one below it. Since, in April, year 10, the top node is as dense as the one below it, is considered stable. Even if the top twenty metres are more dense then the water below it. This situation generally only occurs during the transition, for the top nodes are always the first to move, meaning that any instability will be initialized there first. The exception to this is a source-sink pulse, pulling salt from the bottom of the marginal basin, without directly affecting the water in the middle of the column. In order to have mixing in the bottom of the column to resupply salt to the bottom of the marginal basin and restore the density instability, a more rigorous check for instability is required, mentioned in section \ref{sect:stability_methods}. When checking the column for instability both from the top node down and from the bottom node up, the salt deprivation in the bottom of the marginal basin after flow is solved in this way. The artifact that arises during the transition period as shown in figure~\ref{fig:Transition} does however remain.
+Concerning the transition, as shown in figure~\ref{fig:Transition}, the mixing should start in April. This is namely the moment from where mixing is allowed, and the density in the top node is higher then the rest of the column. The mixing does however not occur until October, as read from figure~\ref{fig:Transition}. The cause of this is that the code begins the instability check by checking whether the top node is more dense then the one below it. Since, in April, year 10, the top node is as dense as the one below it, is considered stable. Even if the top twenty metres are more dense then the water below it. This situation generally only occurs during the transition, for the top nodes are always the first to move, meaning that any instability will be initialized there first. The exception to this is a source-sink pulse, pulling salt from the bottom of the marginal basin, without directly affecting the water in the middle of the column. In order to have mixing in the bottom of the column to resupply salt to the bottom of the marginal basin and restore the density instability, a more rigorous check for instability is required, mentioned in section \ref{sect:stability_methods}. When checking the column for instability both from the top node down and from the bottom node up, the salt deprivation in the bottom of the marginal basin after flow is solved in this way. The artifact that arises during the transition period as shown in figure~\ref{fig:Transition} does however remain.
 The alternative method is to check each individual node for stability. This method solves both the artifact during the transition and the salt deprivation in the bottom of the marginal basin. In practice, the whole column check can take up to an order of magnitude longer to run. This is not only due to the increase in effort to check for the whole column, but mainly due to the limiting factors shown in equation~\ref{eq:FCTS_limits}, where the highest diffusivity in the column determines the size of the time step. A few scattered unstable nodes can therefore significantly impact the run time. 
 
 It turns out however, that the whole column check is more stabel then the top-down, bottom-up check. This is elaborated upon in section \ref{sect:totals_problem}.
@@ -275,7 +275,7 @@ Figure \ref{fig:summer_mixing} shows the results of a run with an evaporation am
 \centering
 \includegraphics[width=1.0\textwidth,keepaspectratio]{summer_mixing_Legend.png}
 \end{subfigure}\hfill
-\caption{Model run with advection, a flow of 5e-5 Sv and a marginal basin depth of 100 metres. The evaporation amplitude was doubled, inducing mixing in summer.}
+\caption{Model run with mixing. The evaporation amplitude was doubled, inducing mixing in summer.}
 \label{fig:summer_mixing}
 \end{figure*}
 
@@ -301,7 +301,7 @@ The periods of mixing in the dead sea are determined by the temperature profile.
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{12-30_reduced_legend.png}
 \end{subfigure}\hfill
-\caption{Model run with source-sink and no advection. The situation shown is right after flow between the two basins occurred.}
+\caption{Standard model case with source-sink and no advection. The situation shown is right after flow between the two basins occurred.}
 \label{fig:no_adv}
 \end{figure*}
 
@@ -320,7 +320,7 @@ The periods of mixing in the dead sea are determined by the temperature profile.
 \includegraphics[width=\textwidth,keepaspectratio]{12-30_reduced_legend.png}
 \label{fig:}
 \end{subfigure}\hfill
-\caption{Model run with advection. The same input parameters as the run shown in figure \ref{fig:no_adv} were used.}
+\caption{Standard model case with advection.}
 \label{fig:with_adv_geen_uitslag}
 \end{figure*}
 
@@ -338,7 +338,7 @@ The periods of mixing in the dead sea are determined by the temperature profile.
 \centering
 \includegraphics[width=1.0\textwidth,keepaspectratio]{with_adv_large_effect_40SV_Legend.png}
 \end{subfigure}\hfill
-\caption{Model run with advection. (1): initiation of the exchanging flow (2): slow decrease of anomaly (3): mixing. }
+\caption{Standard model case with advection and an exchanging flow of 40 Sv. (1): initiation of the exchanging flow (2): slow decrease of anomaly (3): mixing. }
 \label{fig:with_adv_large_effect}
 \end{figure*}
 
@@ -431,7 +431,7 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \centering
 \includegraphics[width=\linewidth,keepaspectratio]{12-30_reduced_legend.png}
 \end{subfigure}\hfill
-\caption{Model run with a very shallow marginal basin. Three periods, those at 11,25 and 39 years, are shown.}
+\caption{Standard model case with a very shallow marginal basin. Three periods, those at 11,25 and 39 years, are shown.}
 \label{fig:Very_shallow_basin}
 \end{figure*}
 
@@ -456,7 +456,7 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \centering
 \includegraphics[width=1.0\textwidth,keepaspectratio]{high_bg_diff_kleine_uitslag_Legend.png}
 \end{subfigure}\hfill
-\caption{Model run with advection, a flow of 1e-5 Sv and a marginal basin depth of 150 metres. The background diffusivity was increased, allowing surface processes to penetrate to greater depth}
+\caption{Standard model case with advection, a flow of 1e-5 Sv and a marginal basin depth of 150 metres. The background diffusivity was increased, allowing surface processes to penetrate to greater depth}
 \label{fig:high_db_success}
 \end{figure*}
 
@@ -482,7 +482,7 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \centering
 \includegraphics[width=1.0\textwidth,keepaspectratio]{Hybrid_Legend.png}
 \end{subfigure}\hfill
-\caption{Standard model run with a background diffusivity of 3.0 and a depth of 100m}
+\caption{Standard model case with a background diffusivity of 3.0 and a depth of 100m}
 \label{fig:hybrid}
 \end{figure*}
 
@@ -508,7 +508,7 @@ As discussed section \ref{sect:SS_and_adv_discussion}, the most relevant paramet
 \centering
 \includegraphics[width=\linewidth,keepaspectratio]{40yr_reduced_Legend.png}
 \end{subfigure}\hfill
-\caption{Model run with a net evaporation rate of 0.001 $kg/m^3$ salt per second.}
+\caption{Standard model case with a net evaporation rate of 0.001 $kg/m^3$ salt per second.}
 \label{fig:net_evap}
 \end{figure*}
 
