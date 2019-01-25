@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.21)  25 JAN 2019 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.21)  25 JAN 2019 12:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,7 +813,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \vbox (badness 2521) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -822,168 +825,171 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2503) has occurred while \output is active []
 
  [2]
-[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `sect:' on page 4 undefined on input line 156.
-
+ [3]
 [4]
-<SpinUp_year_9.png, id=314, 462.528pt x 251.4996pt>
+<SpinUp_year_9.png, id=315, 462.528pt x 251.4996pt>
 File: SpinUp_year_9.png Graphic file (type png)
 <use SpinUp_year_9.png>
 Package pdftex.def Info: SpinUp_year_9.png  used on input line 201.
 (pdftex.def)             Requested size: 448.13222pt x 243.68568pt.
-<SDA-01_TDA-1_SpinUp.png, id=318, 423.83344pt x 313.17pt>
+<SDA-01_TDA-1_SpinUp.png, id=319, 423.83344pt x 313.17pt>
 File: SDA-01_TDA-1_SpinUp.png Graphic file (type png)
 <use SDA-01_TDA-1_SpinUp.png>
 Package pdftex.def Info: SDA-01_TDA-1_SpinUp.png  used on input line 215.
 (pdftex.def)             Requested size: 277.41176pt x 204.98688pt.
-<SDA-01_TDA-1_SpinUp_Legend.png, id=319, 266.6763pt x 327.8649pt>
+<SDA-01_TDA-1_SpinUp_Legend.png, id=320, 266.6763pt x 327.8649pt>
 File: SDA-01_TDA-1_SpinUp_Legend.png Graphic file (type png)
 <use SDA-01_TDA-1_SpinUp_Legend.png>
 Package pdftex.def Info: SDA-01_TDA-1_SpinUp_Legend.png  used on input line 221
 .
 (pdftex.def)             Requested size: 106.69783pt x 131.17865pt.
- [5] [6 <./SpinUp_year_9.png> <./SDA-01_TDA-1_SpinUp.png> <./SDA-01_TDA-1_SpinU
-p_Legend.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6 <./SpinUp_year_9.png> <./SDA-01_TDA-1_SpinUp.png> <./SDA-01_TDA-1_SpinUp_Leg
+end.png>]
 <Transition.png, id=344, 462.528pt x 336.0555pt>
 File: Transition.png Graphic file (type png)
 <use Transition.png>
-Package pdftex.def Info: Transition.png  used on input line 238.
+Package pdftex.def Info: Transition.png  used on input line 239.
 (pdftex.def)             Requested size: 384.1096pt x 279.0952pt.
 <Conv_only.png, id=345, 462.528pt x 346.896pt>
 File: Conv_only.png Graphic file (type png)
 <use Conv_only.png>
-Package pdftex.def Info: Conv_only.png  used on input line 249.
+Package pdftex.def Info: Conv_only.png  used on input line 250.
 (pdftex.def)             Requested size: 384.1096pt x 288.09827pt.
 <summer_mixing.png, id=355, 341.3553pt x 314.8563pt>
 File: summer_mixing.png Graphic file (type png)
 <use summer_mixing.png>
-Package pdftex.def Info: summer_mixing.png  used on input line 271.
+Package pdftex.def Info: summer_mixing.png  used on input line 272.
 (pdftex.def)             Requested size: 298.75264pt x 275.56583pt.
 <summer_mixing_Legend.png, id=356, 155.3805pt x 327.8649pt>
 File: summer_mixing_Legend.png Graphic file (type png)
 <use summer_mixing_Legend.png>
-Package pdftex.def Info: summer_mixing_Legend.png  used on input line 276.
+Package pdftex.def Info: summer_mixing_Legend.png  used on input line 277.
 (pdftex.def)             Requested size: 85.35696pt x 180.11111pt.
 <SS_no_adv.png, id=359, 341.3553pt x 329.0694pt>
 File: SS_no_adv.png Graphic file (type png)
 <use SS_no_adv.png>
-Package pdftex.def Info: SS_no_adv.png  used on input line 297.
+Package pdftex.def Info: SS_no_adv.png  used on input line 298.
 (pdftex.def)             Requested size: 298.75264pt x 288.0053pt.
 <12-30_reduced_legend.png, id=360, 445.665pt x 889.82437pt>
 File: 12-30_reduced_legend.png Graphic file (type png)
 <use 12-30_reduced_legend.png>
-Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 302.
+Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 303.
 (pdftex.def)             Requested size: 98.16019pt x 195.9792pt.
 <with_adv_150m.png, id=361, 341.3553pt x 329.0694pt>
 File: with_adv_150m.png Graphic file (type png)
 <use with_adv_150m.png>
-Package pdftex.def Info: with_adv_150m.png  used on input line 315.
+Package pdftex.def Info: with_adv_150m.png  used on input line 316.
 (pdftex.def)             Requested size: 298.75264pt x 288.0053pt.
 File: 12-30_reduced_legend.png Graphic file (type png)
 <use 12-30_reduced_legend.png>
-Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 320.
+Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 321.
 (pdftex.def)             Requested size: 85.35696pt x 170.42615pt.
 <with_adv_large_effect_40SV_altered.png, id=362, 1424.32124pt x 1342.01375pt>
 File: with_adv_large_effect_40SV_altered.png Graphic file (type png)
 <use with_adv_large_effect_40SV_altered.png>
 Package pdftex.def Info: with_adv_large_effect_40SV_altered.png  used on input 
-line 334.
+line 335.
 (pdftex.def)             Requested size: 298.75264pt x 281.4831pt.
 <with_adv_large_effect_40SV_Legend.png, id=363, 132.9768pt x 327.8649pt>
 File: with_adv_large_effect_40SV_Legend.png Graphic file (type png)
 <use with_adv_large_effect_40SV_Legend.png>
 Package pdftex.def Info: with_adv_large_effect_40SV_Legend.png  used on input l
-ine 339.
+ine 340.
 (pdftex.def)             Requested size: 85.35696pt x 210.46317pt.
  [7] [8 <./Transition.png> <./Conv_only.png>] [9 <./summer_mixing.png> <./summe
-r_mixing_Legend.png> <./SS_no_adv.png> <./12-30_reduced_legend.png>] [10 <./wit
-h_adv_150m.png> <./with_adv_large_effect_40SV_altered.png> <./with_adv_large_ef
-fect_40SV_Legend.png>]
+r_mixing_Legend.png> <./SS_no_adv.png> <./12-30_reduced_legend.png>]
+[10 <./with_adv_150m.png> <./with_adv_large_effect_40SV_altered.png> <./with_ad
+v_large_effect_40SV_Legend.png>]
 
 LaTeX Warning: Reference `sect:large_effect' on page 11 undefined on input line
- 402.
+ 403.
 
-<60m_mar_depth_40yr.png, id=407, 341.3553pt x 329.0694pt>
+[11]
+<60m_mar_depth_40yr.png, id=413, 341.3553pt x 329.0694pt>
 File: 60m_mar_depth_40yr.png Graphic file (type png)
 <use 60m_mar_depth_40yr.png>
-Package pdftex.def Info: 60m_mar_depth_40yr.png  used on input line 427.
+Package pdftex.def Info: 60m_mar_depth_40yr.png  used on input line 428.
 (pdftex.def)             Requested size: 298.75264pt x 288.0053pt.
 File: 12-30_reduced_legend.png Graphic file (type png)
 <use 12-30_reduced_legend.png>
-Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 432.
+Package pdftex.def Info: 12-30_reduced_legend.png  used on input line 433.
 (pdftex.def)             Requested size: 85.35696pt x 170.42615pt.
-<high_bg_diff_kleine_uitslag.png, id=408, 341.3553pt x 335.0919pt>
+<high_bg_diff_kleine_uitslag.png, id=414, 341.3553pt x 335.0919pt>
 File: high_bg_diff_kleine_uitslag.png Graphic file (type png)
 <use high_bg_diff_kleine_uitslag.png>
 Package pdftex.def Info: high_bg_diff_kleine_uitslag.png  used on input line 45
-2.
+3.
 (pdftex.def)             Requested size: 298.75264pt x 293.27628pt.
-<high_bg_diff_kleine_uitslag_Legend.png, id=409, 266.6763pt x 326.9013pt>
+<high_bg_diff_kleine_uitslag_Legend.png, id=415, 266.6763pt x 326.9013pt>
 File: high_bg_diff_kleine_uitslag_Legend.png Graphic file (type png)
 <use high_bg_diff_kleine_uitslag_Legend.png>
 Package pdftex.def Info: high_bg_diff_kleine_uitslag_Legend.png  used on input 
-line 457.
+line 458.
 (pdftex.def)             Requested size: 85.35696pt x 104.6305pt.
-<high_bg_diff_kleine_uitslag_mean_values.png, id=410, 473.6094pt x 343.7643pt>
+<high_bg_diff_kleine_uitslag_mean_values.png, id=416, 473.6094pt x 343.7643pt>
 File: high_bg_diff_kleine_uitslag_mean_values.png Graphic file (type png)
 <use high_bg_diff_kleine_uitslag_mean_values.png>
 Package pdftex.def Info: high_bg_diff_kleine_uitslag_mean_values.png  used on i
-nput line 466.
+nput line 467.
 (pdftex.def)             Requested size: 384.1096pt x 278.80948pt.
-<hybrid.png, id=413, 343.7643pt x 329.0694pt>
+<hybrid.png, id=419, 343.7643pt x 329.0694pt>
 File: hybrid.png Graphic file (type png)
 <use hybrid.png>
-Package pdftex.def Info: hybrid.png  used on input line 478.
+Package pdftex.def Info: hybrid.png  used on input line 479.
 (pdftex.def)             Requested size: 298.75264pt x 285.99179pt.
-<Hybrid_Legend.png, id=414, 266.6763pt x 326.9013pt>
+<Hybrid_Legend.png, id=420, 266.6763pt x 326.9013pt>
 File: Hybrid_Legend.png Graphic file (type png)
 <use Hybrid_Legend.png>
-Package pdftex.def Info: Hybrid_Legend.png  used on input line 483.
+Package pdftex.def Info: Hybrid_Legend.png  used on input line 484.
 (pdftex.def)             Requested size: 85.35696pt x 104.6305pt.
-<hybrid_means.png, id=415, 484.209pt x 312.6882pt>
+<hybrid_means.png, id=421, 484.209pt x 312.6882pt>
 File: hybrid_means.png Graphic file (type png)
 <use hybrid_means.png>
-Package pdftex.def Info: hybrid_means.png  used on input line 492.
+Package pdftex.def Info: hybrid_means.png  used on input line 493.
 (pdftex.def)             Requested size: 384.1096pt x 248.05632pt.
-<001_net_evap_40yr_3steps_V2.png, id=418, 352.1958pt x 322.0833pt>
+<001_net_evap_40yr_3steps_V2.png, id=424, 352.1958pt x 322.0833pt>
 File: 001_net_evap_40yr_3steps_V2.png Graphic file (type png)
 <use 001_net_evap_40yr_3steps_V2.png>
 Package pdftex.def Info: 001_net_evap_40yr_3steps_V2.png  used on input line 50
-4.
+5.
 (pdftex.def)             Requested size: 298.75264pt x 273.21182pt.
-<40yr_reduced_Legend.png, id=419, 477.785pt x 850.17625pt>
+<40yr_reduced_Legend.png, id=425, 477.785pt x 850.17625pt>
 File: 40yr_reduced_Legend.png Graphic file (type png)
 <use 40yr_reduced_Legend.png>
-Package pdftex.def Info: 40yr_reduced_Legend.png  used on input line 509.
+Package pdftex.def Info: 40yr_reduced_Legend.png  used on input line 510.
 (pdftex.def)             Requested size: 85.35696pt x 151.88353pt.
-
+ [12] [13 <./60m_mar_depth_40yr.png> <./high_bg_diff_kleine_uitslag.png> <./hig
+h_bg_diff_kleine_uitslag_Legend.png>] [14 <./high_bg_diff_kleine_uitslag_mean_v
+alues.png> <./hybrid.png> <./Hybrid_Legend.png>] [15 <./hybrid_means.png> <./00
+1_net_evap_40yr_3steps_V2.png> <./40yr_reduced_Legend.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-[12 <./60m_mar_depth_40yr.png> <./high_bg_diff_kleine_uitslag.png> <./high_bg_d
-iff_kleine_uitslag_Legend.png>] [13 <./high_bg_diff_kleine_uitslag_mean_values.
-png> <./hybrid.png> <./Hybrid_Legend.png>] [14 <./hybrid_means.png> <./001_net_
-evap_40yr_3steps_V2.png> <./40yr_reduced_Legend.png>] [15] [16] [17]
-(./main.bbl) [18]
-Overfull \hbox (38.76428pt too wide) in paragraph at lines 862--891
+ [16]
+[17] (./main.bbl) [18]
+Overfull \hbox (38.76428pt too wide) in paragraph at lines 863--892
 [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 920.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 921.
 [19
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 920.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 921.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 920.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 920.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 921.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 921.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8B800E3BF034A81955F5327D243CBD5C;2968.
+(rerunfilecheck)             Checksum: C961E109AC3EDCE5D1FA7882DE87C1EB;3051.
 
 
 LaTeX Warning: There were undefined references.
@@ -991,12 +997,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 920.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 921.
  ) 
 Here is how much of TeX's memory you used:
  19555 strings out of 494923
- 358486 string characters out of 6180742
- 452268 words of memory out of 5000000
+ 358496 string characters out of 6180742
+ 453320 words of memory out of 5000000
  22404 multiletter control sequences out of 15000+600000
  15886 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1016,10 +1022,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on main.pdf (19 pages, 4376595 bytes).
+Output written on main.pdf (19 pages, 4379985 bytes).
 PDF statistics:
- 841 PDF objects out of 1000 (max. 8388607)
- 498 compressed objects within 5 object streams
+ 851 PDF objects out of 1000 (max. 8388607)
+ 500 compressed objects within 5 object streams
  97 named destinations out of 1000 (max. 500000)
  446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
