@@ -172,6 +172,23 @@ Where $r_0$ = -15.654, $\alpha$ = 0.4309 and $\beta$ = 0.936, as determined by \
 \label{fig:SpinUp}
 \end{figure*}
 
+%%Boundary conditions
+
+%%Dt and courant number
+
+%%Density calculations
+
+%%Volume determination, %%Source, Sink of Salt
+\subsection{Source-sink and advection}
+The volume of water that moves every time increment through the strait that connects the two basins, is determined by multiplying its width, depth and the lateral flow velocity through the strait. When the density of the bottom waters in the shallow basin is greater then that of the bottom waters in the deep basin, the flow of salt water from the shallow basin to the deep basin is initiated. The total amount of salt that is moved in this exchange is determined by multiplying the volume of water moved, with the salinity of the source. The impact this amount of transported salt has on a basins is dependent on the total volume of the basin in question. This exchange of salt is implemented through the source-sink term (\textbf{S}), as shown in equation~\ref{eq:FTCS}. \textbf{S} is calculated using equation~\ref{eq:Source-Sink} and is either positive or negative depending on whether it represents a sink or a source, respectively.
+\begin{equation}
+    S = \pm h_{source} \frac{ z_{strait} x_{strait} U_{lat} }{A_{sink} z_u} 
+    \label{eq:Source-Sink}
+\end{equation}
+Where \textbf{h}$_{source}$ is the salinity of the source in $kg \hspace{0.8mm} m^{-3}$, \textbf{U}$_{lat}$ is the lateral flow velocity in $ms^{-1}$, $A_{sink}$ is the surface area of the sink basin in $m^2$, \textbf{z}$_u$ is the vertical extent of the flow in $m$ and \textbf{x}$_{strait}$ and \textbf{z}$_{strait}$ are the strait width and depth, respectively, in $m$.
+
+The physical replacement of the bottom waters as a result of the lateral flow is captured in the advection, where advection is set to be upward in the deep basin and downward in the shallow basin. The value of the advection is equal to the volume of lateral flow per second, divided by the surface area of the basin in question. 
+
 % Low salt_diff_amp
 %
 \begin{figure*}
@@ -191,33 +208,7 @@ Where $r_0$ = -15.654, $\alpha$ = 0.4309 and $\beta$ = 0.936, as determined by \
 \label{fig:SpinUp_dencity_balance_example}
 \end{figure*}
 
-%%Boundary conditions
 
-%%Dt and courant number
-
-%%Density calculations
-
-%%Volume determination, %%Source, Sink of Salt
-\subsection{Source-sink and advection}
-The volume of water that moves every time increment through the strait that connects the two basins, is determined by multiplying its width, depth and the lateral flow velocity through the strait. When the density of the bottom waters in the shallow basin is greater then that of the bottom waters in the deep basin, the flow of salt water from the shallow basin to the deep basin is initiated. The total amount of salt that is moved in this exchange is determined by multiplying the volume of water moved, with the salinity of the source. The impact this amount of transported salt has on a basins is dependent on the total volume of the basin in question. This exchange of salt is implemented through the source-sink term (\textbf{S}), as shown in equation~\ref{eq:FTCS}. \textbf{S} is calculated using equation~\ref{eq:Source-Sink} and is either positive or negative depending on whether it represents a sink or a source, respectively.
-\begin{equation}
-    S = \pm h_{source} \frac{ z_{strait} x_{strait} U_{lat} }{A_{sink} z_u} 
-    \label{eq:Source-Sink}
-\end{equation}
-Where \textbf{h}$_{source}$ is the salinity of the source in $kg \hspace{0.8mm} m^{-3}$, \textbf{U}$_{lat}$ is the lateral flow velocity in $ms^{-1}$, $A_{sink}$ is the surface area of the sink basin in $m^2$, \textbf{z}$_u$ is the vertical extent of the flow in $m$ and \textbf{x}$_{strait}$ and \textbf{z}$_{strait}$ are the strait width and depth, respectively, in $m$.
-
-The physical replacement of the bottom waters as a result of the lateral flow is captured in the advection, where advection is set to be upward in the deep basin and downward in the shallow basin. The value of the advection is equal to the volume of lateral flow per second, divided by the surface area of the basin in question. 
-
-
-
-% Fig Transition
-%-------------------
-\begin{figure*}
-\centering
-\includegraphics[width=0.9\textwidth,keepaspectratio]{Transition.png}
-\caption{The transition from the Spin-Up period. The possibility of mixing is activated in April. This data was generated using an instability check in the top node instead of a whole column check for instability.}
-\label{fig:Transition}
-\end{figure*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Ref mod output
 
@@ -234,6 +225,16 @@ During the ramp period, the temperature, salinity and density profiles show a sy
 
 The lower diffusivity of the salinity compared to that of the temperature, has two significant consequences. The first of these is the reduced depth to which the salinity forcing can penetrate within a given year. The second consequence is in the dependence of the forcing on the diffusivity in the model. Lower diffusivity results in higher forcing on the salinity, as mentioned in section \ref{sect:boundary_conditions}. A higher forcing, results in a higher amplitude in the salinity values. This means that, during winter, the surface water is less saline than for example that in figure \ref{fig:SpinUp}, resulting in a stable density distribution during winter and a regular linear relation between the density and the temperature and salinity. Since this effect only penetrates the water column for the first few metres, deeper in the column the temperature has more impact and the inverse balance of the density curve as seen in figure \ref{fig:SpinUp} is restored. This can be deduced from the equation of state as well (equation \ref{eq:state}), where the density decreases in a given location if $\alpha T$ increases more rapidly then $\beta S$ or $\beta S$ decreases more rapidly then $\alpha T$. The latter is the case in figure \ref{fig:SpinUp_dencity_balance_example}, where the value of $\beta S$ decreases significantly faster with depth then $\alpha T$. If the amplitude of evaporation forcing is significantly higher than the amplitude of the heat flux forcing, the salinity of the water will control the density profile. If that is the case, and assuming there is no net evaporation, the surface water lacks the salinity to become dense enough during winter to become unstable, while the water becomes so saline during summer that the water column becomes unstable, despite its high temperature.
  
+ % Fig Transition
+%-------------------
+\begin{figure*}
+\centering
+\includegraphics[width=0.9\textwidth,keepaspectratio]{Transition.png}
+\caption{The transition from the Spin-Up period. The possibility of mixing is activated in April. This data was generated using an instability check in the top node instead of a whole column check for instability.}
+\label{fig:Transition}
+\end{figure*}
+ 
+ 
 \subsection{The transition period as an example of column check method differences}
 \label{sect:transition}
 \subsubsection{Results of the transition case}
@@ -248,17 +249,6 @@ The transition around the tenth year is shown in in figure~\ref{fig:Transition}.
 \label{fig:Conv_Only}
 \end{figure*}
 
-\subsubsection{Discussion}
-Concerning the transition, as shown in figure~\ref{fig:Transition}, the mixing should start in April. This is namely the moment from where mixing is allowed, and the density in the top node is higher then the rest of the column. The mixing does however not occur until October, as read from figure~\ref{fig:Transition}. The cause of this is that the code begins the instability check by checking whether the top node is more dense then the one below it. Since, in April, year 10, the top node is as dense as the one below it, is considered stable. Even if the top twenty metres are more dense then the water below it. This situation generally only occurs during the transition, for the top nodes are always the first to move, meaning that any instability will be initialized there first. The exception to this is a source-sink pulse, pulling salt from the bottom of the marginal basin, without directly affecting the water in the middle of the column. In order to have mixing in the bottom of the column to resupply salt to the bottom of the marginal basin and restore the density instability, a more rigorous check for instability is required, mentioned in section \ref{sect:stability_methods}. When checking the column for instability both from the top node down and from the bottom node up, the salt deprivation in the bottom of the marginal basin after flow is solved in this way. The artifact that arises during the transition period as shown in figure~\ref{fig:Transition} does however remain.
-The alternative method is to check each individual node for stability. This method solves both the artifact during the transition and the salt deprivation in the bottom of the marginal basin. In practice, the whole column check can take up to an order of magnitude longer to run. This is not only due to the increase in effort to check for the whole column, but mainly due to the limiting factors shown in equation~\ref{eq:FCTS_limits}, where the highest diffusivity in the column determines the size of the time step. A few scattered unstable nodes can therefore significantly impact the run time. 
-
-It turns out however, that the whole column check is more stabel then the top-down, bottom-up check. This is elaborated upon in section \ref{sect:totals_problem}.
-
-\subsection{Summer mixing}
-The stability of the column is mainly determined by the density of the surface waters and therefore, ultimately determined by the balance between $\alpha T$ and $\beta S$ (equation \ref{eq:state}) at the surface. By altering either the heat flux or the evaporation, the stability behavior of the column can be investigated.
-
-\subsubsection{Results}
-Figure \ref{fig:summer_mixing} shows the results of a run with an evaporation amplitude of 0.6 rather then the standard 0.3. The mixing now occurs in summer while the column is stable in winter. The overall shape of the profile is rather the same, but the density is now almost a direct copy of the temperature and salinity rather than a mirror image, as is the case in figure \ref{fig:Conv_Only}. 
 % % Fig with summer mixing, kleine uitslag
 % %-------------------
 \begin{figure*}
@@ -275,6 +265,19 @@ Figure \ref{fig:summer_mixing} shows the results of a run with an evaporation am
 \caption{Model run with mixing. The evaporation amplitude was doubled, inducing mixing in summer.}
 \label{fig:summer_mixing}
 \end{figure*}
+
+\subsubsection{Discussion}
+Concerning the transition, as shown in figure~\ref{fig:Transition}, the mixing should start in April. This is namely the moment from where mixing is allowed, and the density in the top node is higher then the rest of the column. The mixing does however not occur until October, as read from figure~\ref{fig:Transition}. The cause of this is that the code begins the instability check by checking whether the top node is more dense then the one below it. Since, in April, year 10, the top node is as dense as the one below it, is considered stable. Even if the top twenty metres are more dense then the water below it. This situation generally only occurs during the transition, for the top nodes are always the first to move, meaning that any instability will be initialized there first. The exception to this is a source-sink pulse, pulling salt from the bottom of the marginal basin, without directly affecting the water in the middle of the column. In order to have mixing in the bottom of the column to resupply salt to the bottom of the marginal basin and restore the density instability, a more rigorous check for instability is required, mentioned in section \ref{sect:stability_methods}. When checking the column for instability both from the top node down and from the bottom node up, the salt deprivation in the bottom of the marginal basin after flow is solved in this way. The artifact that arises during the transition period as shown in figure~\ref{fig:Transition} does however remain.
+The alternative method is to check each individual node for stability. This method solves both the artifact during the transition and the salt deprivation in the bottom of the marginal basin. In practice, the whole column check can take up to an order of magnitude longer to run. This is not only due to the increase in effort to check for the whole column, but mainly due to the limiting factors shown in equation~\ref{eq:FCTS_limits}, where the highest diffusivity in the column determines the size of the time step. A few scattered unstable nodes can therefore significantly impact the run time. 
+
+It turns out however, that the whole column check is more stabel then the top-down, bottom-up check. This is elaborated upon in section \ref{sect:totals_problem}.
+
+\subsection{Summer mixing}
+The stability of the column is mainly determined by the density of the surface waters and therefore, ultimately determined by the balance between $\alpha T$ and $\beta S$ (equation \ref{eq:state}) at the surface. By altering either the heat flux or the evaporation, the stability behavior of the column can be investigated.
+
+\subsubsection{Results}
+Figure \ref{fig:summer_mixing} shows the results of a run with an evaporation amplitude of 0.6 rather then the standard 0.3. The mixing now occurs in summer while the column is stable in winter. The overall shape of the profile is rather the same, but the density is now almost a direct copy of the temperature and salinity rather than a mirror image, as is the case in figure \ref{fig:Conv_Only}. 
+
 
 \subsubsection{Discussion}
 \label{sect:Summer_mixing_discussion}
