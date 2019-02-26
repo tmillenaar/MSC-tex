@@ -13,11 +13,6 @@ Hardie, L.~A. and Lowenstein, T.~K. (2004).
   of the evaporite evidence from dsdp legs 13 and 42a cores.
 \newblock {\em Journal of Sedimentary Research}, 74(4):453--461.
 
-\bibitem[Heiden et~al., 2017]{Heiden2017Application}
-Heiden, V., Meijer, P., and Simon, D. (2017).
-\newblock Application of the 1d diffusion-equation to the limnological
-  evolutionof the dead sea.
-
 \bibitem[Hsu, 1972]{hsu1972origin}
 Hsu, K. (1972).
 \newblock Origin of saline giants: a critical review after the discovery of the
@@ -85,6 +80,11 @@ Schmalz, R.~F. (1969).
 Slingerland, R. and Kump, L. (2011).
 \newblock {\em Mathematical Modeling of Earth's Dynamical Systems: A Primer}.
 \newblock Princeton University Press.
+
+\bibitem[van~der Heiden et~al., 2017]{Heiden2017Application}
+van~der Heiden, V., Meijer, P., and Simon, D. (2017).
+\newblock Application of the 1d diffusion-equation to the limnological
+  evolutionof the dead sea.
 
 \bibitem[W{\aa}hlin and Cenedese, 2006]{waahlin2006entraining}
 W{\aa}hlin, A. and Cenedese, C. (2006).
